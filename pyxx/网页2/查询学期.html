@@ -1,0 +1,237 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="pyxkcx.aspx" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTMwMzM4MDIzNw9kFgJmD2QWAgIBD2QWAgIFD2QWDgIBDxAPFgYeDURhdGFUZXh0RmllbGQFCHRlcm1OYW1lHg5EYXRhVmFsdWVGaWVsZAUIdGVybUNvZGUeC18hRGF0YUJvdW5kZ2QQFRURMjAxNS0yMDE2LTHlrabmnJ8SMjAxNC0yMDE15pil5a2m5pyfEjIwMTQtMjAxNeeni+WtpuacnxIyMDEzLTIwMTTmmKXlrabmnJ8SMjAxMy0yMDE056eL5a2m5pyfEzIwMTItMjAxM+aYpeWtpuacnyASMjAxMi0yMDEz56eL5a2m5pyfEjIwMTEtMjAxMuaYpeWtpuacnxMyMDExLTIwMTLnp4vlrabmnJ8gEjIwMTAtMjAxMeaYpeWtpuacnxIyMDEwLTIwMTHnp4vlrabmnJ8SMjAwOS0yMDEw5pil5a2m5pyfEjIwMDktMjAxMOeni+WtpuacnxIyMDA4LTIwMDnmmKXlrabmnJ8SMjAwOC0yMDA556eL5a2m5pyfEjIwMDctMjAwOOaYpeWtpuacnxIyMDA3LTIwMDjnp4vlrabmnJ8SMjAwNi0yMDA35pil5a2m5pyfEjIwMDYtMjAwN+eni+WtpuacnxIyMDA1LTIwMDbmmKXlrabmnJ8SMjAwNS0yMDA256eL5a2m5pyfFRUCNDICMjkCMjgCMjcCMjYCMjUCMjQCMjMCMjICMjECMTkCMTgCMTcCMTYCMTICMTECMTABOQE4ATcBNhQrAxVnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIFDw8WAh4EVGV4dAUe5b2T5YmN5a2m5pyfOjIwMTUtMjAxNi0x5a2m5pyfZGQCCQ8PFgIfAwV65oC75a2m5YiGOjxmb250IGNvbG9yPXJlZD48L2ZvbnQ+5a2m5YiGIOWtpuS9jeivvjo8Zm9udCBjb2xvcj1yZWQ+PC9mb250PuWtpuWIhiDpnZ7lrabkvY3or746PGZvbnQgY29sb3I9cmVkPjwvZm9udD7lrabliIZkZAINDw8WAh4IQXJyUGFybXMVAQI0MmRkAg8PPCsAEQIADxYGHghQYWdlU2l6ZQIPHwJnHgtfIUl0ZW1Db3VudGZkARAWABYAFgBkAhEPFgIeB1Zpc2libGVnZAITDw8WAh8DBTPmnKzkuJPkuJrmnIDkvY7opoHmsYIo5a2m5L2N5YiGOjAuMCDmgLvlrabliIY6MzIuMClkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUYX2N0bDA6TWFpbldvcms6YnRuU2VhcmNoBRVfY3RsMDpNYWluV29yazpkZ0RhdGEPPCsADAEIZmTDCRtE5Wa3TtKFKyK2N/no0GcOQOdtO7+hceIdc0H2XA==" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWGwK7tP7zCgKui++zAQKsi4uwAQKsi4ewAQKsi8OzAQKsi9+zAQKsi9uzAQKsi9ezAQKsi9OzAQKsi++zAQKsi+uzAQKti4uwAQKti4ewAQKti8OzAQKti9+zAQKti++zAQKti+uzAQKti+ezAQK1i6ewAQK6i6ewAQKri6ewAQKoi6ewAQLo8/+1CgLS77qCBwLhjdWWAQKxie3ACgLd/YmoD2Qs8y2TPkQ2TFkvJfrYS65QX15auWaiWxTJUT1lcZz8" />
+        
+        
+    
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">选课查询</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+
+
+        
+        
+    <div id="Fin_Context">
+        <div id="Fin_Box">
+            学期:<select name="_ctl0:MainWork:txtxq" id="_ctl0_MainWork_txtxq">
+	<option selected="selected" value="42">2015-2016-1学期</option>
+	<option value="29">2014-2015春学期</option>
+	<option value="28">2014-2015秋学期</option>
+	<option value="27">2013-2014春学期</option>
+	<option value="26">2013-2014秋学期</option>
+	<option value="25">2012-2013春学期 </option>
+	<option value="24">2012-2013秋学期</option>
+	<option value="23">2011-2012春学期</option>
+	<option value="22">2011-2012秋学期 </option>
+	<option value="21">2010-2011春学期</option>
+	<option value="19">2010-2011秋学期</option>
+	<option value="18">2009-2010春学期</option>
+	<option value="17">2009-2010秋学期</option>
+	<option value="16">2008-2009春学期</option>
+	<option value="12">2008-2009秋学期</option>
+	<option value="11">2007-2008春学期</option>
+	<option value="10">2007-2008秋学期</option>
+	<option value="9">2006-2007春学期</option>
+	<option value="8">2006-2007秋学期</option>
+	<option value="7">2005-2006春学期</option>
+	<option value="6">2005-2006秋学期</option>
+
+</select>
+            &nbsp;&nbsp;
+            <input type="image" name="_ctl0:MainWork:btnSearch" id="_ctl0_MainWork_btnSearch" src="../images/query.gif" align="absbottom" border="0" style="border-style:None;" />&nbsp;&nbsp;
+            <span id="_ctl0_MainWork_lbltitle1" style="color:Red;">当前学期:2015-2016-1学期</span>
+        </div>
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+                课程列表<span id="_ctl0_MainWork_lblNum"></span>
+                <span id="_ctl0_MainWork_lbltitle">总学分:<font color=red></font>学分 学位课:<font color=red></font>学分 非学位课:<font color=red></font>学分</span>
+            </div>
+            <div class="pagestopr">
+                
+                <a id="_ctl0_MainWork_WUCpyjhdy_LnkBtPrint" href="javascript:__doPostBack(&#39;_ctl0$MainWork$WUCpyjhdy$LnkBtPrint&#39;,&#39;&#39;)">
+    <img src="http://gsg.wust.edu.cn:80/pyxx/images/worddy.png" border="0" />
+</a>
+
+<input type="hidden" name="_ctl0:MainWork:WUCpyjhdy:HFpath" id="_ctl0_MainWork_WUCpyjhdy_HFpath" value="D:\Gmis\pyxx\WordCells\py_xkjg.doc" />
+<input type="hidden" name="_ctl0:MainWork:WUCpyjhdy:HFfilename" id="_ctl0_MainWork_WUCpyjhdy_HFfilename" value="学生选课结果" />
+<input type="hidden" name="_ctl0:MainWork:WUCpyjhdy:HFdatatype" id="_ctl0_MainWork_WUCpyjhdy_HFdatatype" value="py_xkjg" />
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+        <div>
+
+</div>
+        <table id="_ctl0_MainWork_Emptytable" class="GridViewStyle" cellspacing="0" cellpadding="0" width="100%" border="1">
+	<tr class="GridViewHeaderStyle">
+		<td nowrap="nowrap">
+                    &nbsp;班级名称
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;教室
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;开课院系
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;课程编号
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;课程名称
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;主讲教师
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;开课时段
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;课时
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;学分
+                </td>
+		<td nowrap="nowrap">
+                    &nbsp;学位课
+                </td>
+	</tr>
+	<tr>
+		<td colspan="10">
+                    <div class="nocon">
+                        <ul>
+                            <li>没查询到相关内容</li></ul>
+                    </div>
+                </td>
+	</tr>
+</table>
+
+        <div>
+            <span id="_ctl0_MainWork_Label1" style="color:Red;">本专业最低要求(学位分:0.0 总学分:32.0)</span>
+        </div>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        </form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

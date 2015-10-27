@@ -1,0 +1,625 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="pyjhzdwh.aspx" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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5Z+55YW75Y2V5L2NG+WMluWtpuW3peeoi+S4juaKgOacr+WtpumZohXotYTmupDkuI7njq/looPlrabpmaIn5Lit6ZKi6ZuG5Zui5q2m5rGJ5a6J5YWo546v5L+d56CU56m26ZmiHOaxvei9puS4juS6pOmAmuW3peeoi+WtpumZoiAM5L2T6IKy6K++6YOoFeeUn+eJqeWMu+WtpueglOeptumZohXpqazlhYvmgJ3kuLvkuYnlrabpmaIM5YWs5YWx6Zmi57O7FRcAAjAxAjAyAjA0AjA1AjA2AjA3AjA4AjA5AjEwAjExAjEzAjE0AjE1AjE2AjE3AjE4AjE5AjIwAjIxAjIyAjUxAzk5ORQrAxdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBZmQCAw9kFgJmD2QWAgIBDzwrAAsAZAIhDw8WAh8AZWRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYXBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDI6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDM6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDQ6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDU6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDY6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDc6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDg6Y2hrU2VsBSJfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDk6Y2hrU2VsBSNfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDEwOmNoa1NlbAUjX2N0bDA6TWFpbldvcms6ZGdEYXRhOl9jdGwxMTpjaGtTZWwFI19jdGwwOk1haW5Xb3JrOmRnRGF0YTpfY3RsMTI6Y2hrU2VsBSNfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDEzOmNoa1NlbAUjX2N0bDA6TWFpbldvcms6ZGdEYXRhOl9jdGwxNDpjaGtTZWwFI19jdGwwOk1haW5Xb3JrOmRnRGF0YTpfY3RsMTU6Y2hrU2VsBSNfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDE2OmNoa1NlbAUjX2N0bDA6TWFpbldvcms6ZGdEYXRhOl9jdGwxNzpjaGtTZWwFI19jdGwwOk1haW5Xb3JrOmRnRGF0YTpfY3RsMTg6Y2hrU2VsBSNfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDE5OmNoa1NlbAUjX2N0bDA6TWFpbldvcms6ZGdEYXRhOl9jdGwyMDpjaGtTZWwFI19jdGwwOk1haW5Xb3JrOmRnRGF0YTpfY3RsMjE6Y2hrU2VsBSNfY3RsMDpNYWluV29yazpkZ0RhdGE6X2N0bDIyOmNoa1NlbAUjX2N0bDA6TWFpbldvcms6ZGdEYXRhOl9jdGwyMzpjaGtTZWwFI19jdGwwOk1haW5Xb3JrOmRnRGF0YTpfY3RsMjQ6Y2hrU2Vss8p+MMAO1m21kG8US7ZzGxGoRBP3Tdce6IlEaonXlcA=" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWqQECmdjIsAUCnqi61QECoKWbtwkCtK/p9Q8C3YX0qAwCsarQjgkC+tes2wQC+9es2wQC+Nes2wQC+des2wQC/tes2wQC/9es2wQCrLqoywgCtZmIqQ8CtJmIqQ8Ct5mIqQ8CtpmIqQ8CsZmIqQ8CsJmIqQ8Cz7bkmQEC2Nyq0QYC2dyq0QYC2tyq0QYC29yq0QYC3Nyq0QYC3dyq0QYC8vzNrA8Ck562vwkCkp62vwkCkZ62vwkCkJ62vwkCl562vwkClp62vwkC7dbTrQQC7pfMyQoC75fMyQoC7JfMyQoC7ZfMyQoC6pfMyQoC65fMyQoC6Oar6gMCqdmp1A0CqNmp1A0Cq9mp1A0Cqtmp1A0Crdmp1A0CrNmp1A0Cq7ytkQcC7KOM5A8C7aOM5A8C7qOM5A8C76OM5A8C6KOM5A8C6aOM5A8C3ryunw0Ch97XrQ8Cht7XrQ8Chd7XrQ8ChN7XrQ8Cg97XrQ8Cgt7XrQ8Ctsv9oAUCmqiWEwKbqJYTApiolhMCmaiWEwKeqJYTAp+olhMCtsuR5gQCmqiC6QcCm6iC6QcCmKiC6QcCmaiC6QcCnqiC6QcCn6iC6QcCtsvF/w8Cmqi+oAUCm6i+oAUCmKi+oAUCmai+oAUCnqi+oAUCn6i+oAUCtsvZxA8CmqiqtgsCm6iqtgsCmKiqtgsCmaiqtgsCnqiqtgsCn6iqtgsCtsvtiQ8CmqjGjwkCm6jGjwkCmKjGjwkCmajGjwkCnqjGjwkCn6jGjwkCtsuBzw4CmqjyhQ8Cm6jyhQ8CmKjyhQ8CmajyhQ8CnqjyhQ8Cn6jyhQ8Ctsv16gECmqjuowcCm6juowcCmKjuowcCmajuowcCnqjuowcCn6juowcCtsuJsAECmqiauQUCm6iauQUCmKiauQUCmaiauQUCnqiauQUCn6iauQUCtsuddQKaqLaPCwKbqLaPCwKYqLaPCwKZqLaPCwKeqLaPCwKfqLaPCwK2y7E6ApqoooUJApuoooUJApioooUJApmoooUJAp6oooUJAp+oooUJApvEicoLAtWhrLoBAtShrLoBAtehrLoBAtahrLoBAtGhrLoBAtChrLoBApvEnY8LAtWh2LMHAtSh2LMHAteh2LMHAtah2LMHAtGh2LMHAtCh2LMHApvE0agGAtWh9MoGAtSh9MoGAteh9MoGAtah9MoGAtGh9MoGAtCh9MoGApvE5e0FAtWh4MAEAtSh4MAEAteh4MAEAtah4MAEAtGh4MAEAtCh4MAEApvE+bIFAtWhnNYKAtShnNYKAtehnNYKAtahnNYKAtGhnNYKAtChnNYKAsHmgdcNAtLosYsHAueSqZ8PgScG4RUnIBS01plaYhWrznH8xy35aWL5M/HlL7kR7hc=" />
+        
+        
+    
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">培养计划制定</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+
+
+        
+        
+    <div id="Fin_Context">
+        <div id="Tab" class="itabs">
+            <a href="pyjhzdwh.aspx" class="tab-current"><span>提交培养计划</span></a> <a href="pyjh_bdsm.aspx">
+                <span>必读书目或文献</span></a>
+        </div>
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+                
+                
+                <span id="_ctl0_MainWork_lblNum"></span>
+                <span id="_ctl0_MainWork_lbltitle">当前学位课:20门,34.0学分 非学位课:3门,6学分</span>&nbsp;
+                <span id="_ctl0_MainWork_Label1" style="color:Red;font-weight:bold;">本专业最低要求(学位分:0.0 总学分:32.0)</span>
+            </div>
+            <div class="pagestopr">
+                <a id="_ctl0_MainWork_cmdAdd" href="javascript:__doPostBack(&#39;_ctl0$MainWork$cmdAdd&#39;,&#39;&#39;)"><img src="../images/bc.png" border="0"></a>
+                <a onclick="return confirm(&#39;提交培养计划后不可以更改，确定吗?&#39;);" id="_ctl0_MainWork_btnjt" href="javascript:__doPostBack(&#39;_ctl0$MainWork$btnjt&#39;,&#39;&#39;)"><img src="../images/tjpyjh.png" border="0"></a>
+                <a id="_ctl0_MainWork_choosekc" href="javascript:__doPostBack(&#39;_ctl0$MainWork$choosekc&#39;,&#39;&#39;)"><img src="../images/tjfxwk.png" border="0"></a>
+                
+                <input type="submit" name="_ctl0:MainWork:btncz" value="重置" onclick="return confirm(&#39;重置将清空你的个人培养计划,是否继续？&#39;);" language="javascript" id="_ctl0_MainWork_btncz" />
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td valign="top" width="100%">
+                    <table class="GridViewStyle" cellspacing="0" rules="all" bordercolor="#9CD7FF" border="1" id="_ctl0_MainWork_dgData" style="background-color:White;border-color:#9CD7FF;font-size:X-Small;width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle" nowrap="nowrap">
+		<td align="center" style="width:40px;">选择</td><td nowrap="nowrap" align="center">分组情况</td><td nowrap="nowrap" align="center">课程编号</td><td nowrap="nowrap" align="center">课程名称</td><td nowrap="nowrap" align="center">选课类型</td><td nowrap="nowrap" align="center">学分</td><td nowrap="nowrap" align="center">学时</td><td align="center">选修学期</td><td nowrap="nowrap" align="center">删除</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl2_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl2:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S505001</td><td>知识产权</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">16</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl2:drpxq" id="_ctl0_MainWork_dgData__ctl2_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl3_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl3:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S505002</td><td>文献检索</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">16</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl3:drpxq" id="_ctl0_MainWork_dgData__ctl3_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl4_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl4:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S506001</td><td>中国特色社会主义理论与实践研究</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl4:drpxq" id="_ctl0_MainWork_dgData__ctl4_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl5_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl5:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S514A01</td><td>英语听说（二）</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.5</td><td nowrap="nowrap" align="center">26</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl5:drpxq" id="_ctl0_MainWork_dgData__ctl5_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl6_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl6:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S514B01</td><td>英语听说（一）</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.5</td><td nowrap="nowrap" align="center">26</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl6:drpxq" id="_ctl0_MainWork_dgData__ctl6_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl7_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl7:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S514B02</td><td>英语阅读</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.5</td><td nowrap="nowrap" align="center">22</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl7:drpxq" id="_ctl0_MainWork_dgData__ctl7_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl8_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl8:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S514B03</td><td>英语写作</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.5</td><td nowrap="nowrap" align="center">22</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl8:drpxq" id="_ctl0_MainWork_dgData__ctl8_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl9_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl9:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第1组，选1-2门 </td><td nowrap="nowrap" align="center">S606002</td><td>自然辩证法概论</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">16</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl9:drpxq" id="_ctl0_MainWork_dgData__ctl9_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl10_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl10:chkSel" /></div>
+                                </td><td nowrap="nowrap" align="center">第1组，选1-2门 </td><td nowrap="nowrap" align="center">S606003</td><td>马克思主义与社会科学方法论</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">16</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl10:drpxq" id="_ctl0_MainWork_dgData__ctl10_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl11_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl11:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第2组，选1-2门 </td><td nowrap="nowrap" align="center">S607002</td><td>随机过程</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl11:drpxq" id="_ctl0_MainWork_dgData__ctl11_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl12_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl12:chkSel" /></div>
+                                </td><td nowrap="nowrap" align="center">第2组，选1-2门 </td><td nowrap="nowrap" align="center">S607004</td><td>矩阵分析</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl12:drpxq" id="_ctl0_MainWork_dgData__ctl12_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl13_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl13:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第3组，选1-4门 </td><td nowrap="nowrap" align="center">S713001</td><td>现代软件工程学</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl13:drpxq" id="_ctl0_MainWork_dgData__ctl13_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl14_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl14:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第3组，选1-4门 </td><td nowrap="nowrap" align="center">S713004</td><td>高级计算机系统结构</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl14:drpxq" id="_ctl0_MainWork_dgData__ctl14_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl15_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl15:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第3组，选1-4门 </td><td nowrap="nowrap" align="center">S713005</td><td>人工智能与机器学习</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl15:drpxq" id="_ctl0_MainWork_dgData__ctl15_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl16_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl16:chkSel" /></div>
+                                </td><td nowrap="nowrap" align="center">第3组，选1-4门 </td><td nowrap="nowrap" align="center">S813002</td><td>嵌入式系统理论与技术</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl16:drpxq" id="_ctl0_MainWork_dgData__ctl16_drpxq" disabled="disabled">
+			<option selected="selected" value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl17_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl17:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第4组，选1-5门 </td><td nowrap="nowrap" align="center">S813003</td><td>现代数据库原理</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl17:drpxq" id="_ctl0_MainWork_dgData__ctl17_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl18_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl18:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第4组，选1-5门 </td><td nowrap="nowrap" align="center">S813004</td><td>图形学与虚拟现实</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl18:drpxq" id="_ctl0_MainWork_dgData__ctl18_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl19_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl19:chkSel" /></div>
+                                </td><td nowrap="nowrap" align="center">第4组，选1-5门 </td><td nowrap="nowrap" align="center">S813005</td><td>DSP系统开发技术</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl19:drpxq" id="_ctl0_MainWork_dgData__ctl19_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl20_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl20:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第4组，选1-5门 </td><td nowrap="nowrap" align="center">S813006</td><td>数据挖掘与知识发现</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl20:drpxq" id="_ctl0_MainWork_dgData__ctl20_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl21_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl21:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">第4组，选1-5门 </td><td nowrap="nowrap" align="center">S813007</td><td>信息安全技术</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">32</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl21:drpxq" id="_ctl0_MainWork_dgData__ctl21_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl22_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl22:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S913001</td><td>参加学术讲座（不少于6次）</td><td nowrap="nowrap" align="center">非学位课</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">0</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl22:drpxq" id="_ctl0_MainWork_dgData__ctl22_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl23_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl23:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S913002</td><td>开题报告</td><td nowrap="nowrap" align="center">非学位课</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">0</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl23:drpxq" id="_ctl0_MainWork_dgData__ctl23_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td>
+                                    <div align="center">
+                                        <input id="_ctl0_MainWork_dgData__ctl24_chkSel" type="checkbox" name="_ctl0:MainWork:dgData:_ctl24:chkSel" checked="checked" /></div>
+                                </td><td nowrap="nowrap" align="center">&nbsp;</td><td nowrap="nowrap" align="center">S913101</td><td>完成专业实践</td><td nowrap="nowrap" align="center">非学位课</td><td nowrap="nowrap" align="center">4</td><td nowrap="nowrap" align="center">0</td><td align="center">
+                                    <select name="_ctl0:MainWork:dgData:_ctl24:drpxq" id="_ctl0_MainWork_dgData__ctl24_drpxq" disabled="disabled">
+			<option value="1">1</option>
+			<option selected="selected" value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+
+		</select>
+                                </td><td nowrap="nowrap" align="center" style="width:30px;">
+                                    
+                                </td>
+	</tr>
+</table>
+                </td>
+                <td valign="top" nowrap align="center">
+                    
+                </td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" width="100%" class="tables">
+            <tr>
+                <td width="20%" rowspan="2" align="center">
+                    开题报告
+                </td>
+                <td width="20%" align="center">
+                    开题时间
+                </td>
+                <td width="60%" align="center">
+                    说 明
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="hidden" name="_ctl0:MainWork:hidktsj" id="_ctl0_MainWork_hidktsj" />
+                    <input name="_ctl0:MainWork:txtktsj" type="text" id="_ctl0_MainWork_txtktsj" />月
+                </td>
+                <td>
+                    1、须已完成个人培养计划中安排在开题时间以前各学期的A、B和C类课程的学习且成绩合格，方能申请开题；2、开题时间定于每年的4月和10月，开题通过后，方能进入论文撰写阶段，参加论文答辩；3、4月通过开题，最早可于同年12月参加学位论文答辩；10月通过开题，最早可在次年5月参加学位论文答辩。
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center">
+                    论文答辩
+                </td>
+                <td align="center">
+                    答辩时间
+                </td>
+                <td align="center">
+                    说 明
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input name="_ctl0:MainWork:txtdbsj" type="text" id="_ctl0_MainWork_txtdbsj" />月
+                </td>
+                <td>
+                    1、须按学校规定撰写、打印、装订学位论文；2、学位论文在答辩前1个月按学校规定送专家评审，通过后方可进行论文答辩。
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" height="35">
+                    
+                </td>
+            </tr>
+        </table>
+        <div class="prompt">
+            <span id="_ctl0_MainWork_tjpyjhsm"></span>
+        </div>
+        <div headertext="试图保存信息时，出现如下错误。" showmessagebox="True" showsummary="False" id="_ctl0_MainWork_valSum" class="td" style="color:Red;height:82px;width:249px;display:none;">
+
+</div>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        
+<script type="text/javascript">
+<!--
+var Page_ValidationSummaries =  new Array(document.getElementById("_ctl0_MainWork_valSum"));
+// -->
+</script>
+
+<script language=javascript>alert('当前学期没有注册无法提交培养计划!');document.location.href='../loging.aspx'</script></form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

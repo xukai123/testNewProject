@@ -1,0 +1,214 @@
+<script language=javascript>alert('请完善个人基本信息后才可以培养计划查询！');</script><script language=javascript>history.back();</script><script language=javascript>alert('请完善个人基本信息后才可以培养计划查询！');</script><script language=javascript>history.back();</script><script language=javascript>alert('请完善个人基本信息后才可以培养计划查询！');</script><script language=javascript>history.back();</script><script language=javascript>alert('请完善个人基本信息后才可以培养计划查询！');</script><script language=javascript>history.back();</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="pyjhcx.aspx" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDQKwjrS6AQLS77qCBwLhjdWWAQKxie3ACgLd/YmoDwLqjfFYAuuN8VgC6I3xWALpjfFYAuaN8VgC543xWALkjfFYAuWN8ViKWnaYFKxu/RU4VfbwDIL4ZdIrBy4Vnmw+iNZ89UYyJA==" />
+        
+        
+    
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">培养计划查询</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+
+
+        
+        
+    <div id="Fin_Context">
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+                课程列表<span id="_ctl0_MainWork_lblNum">(共:19门)</span>
+                <span id="_ctl0_MainWork_lbltitle">总学分:33.00 学位课:16门,27.00学分 非学位课:3门,6.00学分</span>
+                <span id="_ctl0_MainWork_Label2" style="color:Red;">导师姓名：李涛</span>
+            </div>
+            <div class="pagestopr">
+                
+                <a id="_ctl0_MainWork_WUCpyjhdy_LnkBtPrint" href="javascript:__doPostBack(&#39;_ctl0$MainWork$WUCpyjhdy$LnkBtPrint&#39;,&#39;&#39;)">
+    <img src="http://gsg.wust.edu.cn:80/pyxx/images/worddy.png" border="0" />
+</a>
+
+<input type="hidden" name="_ctl0:MainWork:WUCpyjhdy:HFpath" id="_ctl0_MainWork_WUCpyjhdy_HFpath" value="D:\Gmis\pyxx\WordCells\py_pyjh.doc" />
+<input type="hidden" name="_ctl0:MainWork:WUCpyjhdy:HFfilename" id="_ctl0_MainWork_WUCpyjhdy_HFfilename" value="学生培养计划" />
+<input type="hidden" name="_ctl0:MainWork:WUCpyjhdy:HFdatatype" id="_ctl0_MainWork_WUCpyjhdy_HFdatatype" value="py_pyjh" />
+                
+            </div>
+        </div>
+        <table class="GridViewStyle" cellspacing="0" rules="all" bordercolor="#9CD7FF" border="1" id="_ctl0_MainWork_dgData" style="background-color:White;border-color:#9CD7FF;width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle" nowrap="nowrap">
+		<td nowrap="nowrap" style="width:60px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl0&#39;,&#39;&#39;)">课程编号</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl1&#39;,&#39;&#39;)">课程名称</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl2&#39;,&#39;&#39;)">课程类别</a></td><td nowrap="nowrap" align="center"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl3&#39;,&#39;&#39;)">是否学位课</a></td><td nowrap="nowrap" align="center"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl4&#39;,&#39;&#39;)">学分</a></td><td nowrap="nowrap" align="center"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl5&#39;,&#39;&#39;)">学时</a></td><td nowrap="nowrap" align="center"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl6&#39;,&#39;&#39;)">选修学期</a></td><td nowrap="nowrap" align="center"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl7&#39;,&#39;&#39;)">备注</a></td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S505001</td><td nowrap="nowrap">知识产权</td><td nowrap="nowrap">A公共学位课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.00</td><td nowrap="nowrap" align="center">16</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S505002</td><td nowrap="nowrap">文献检索</td><td nowrap="nowrap">A公共学位课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.00</td><td nowrap="nowrap" align="center">16</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S506001</td><td nowrap="nowrap">中国特色社会主义理论与实践研究</td><td nowrap="nowrap">A公共学位课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S607002</td><td nowrap="nowrap">随机过程</td><td nowrap="nowrap">I学科通识课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S713001</td><td nowrap="nowrap">现代软件工程学</td><td nowrap="nowrap">G学科基础课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S713005</td><td nowrap="nowrap">人工智能与机器学习</td><td nowrap="nowrap">G学科基础课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S713004</td><td nowrap="nowrap">高级计算机系统结构</td><td nowrap="nowrap">G学科基础课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S813003</td><td nowrap="nowrap">现代数据库原理</td><td nowrap="nowrap">H公共选修课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S813004</td><td nowrap="nowrap">图形学与虚拟现实</td><td nowrap="nowrap">H公共选修课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S813006</td><td nowrap="nowrap">数据挖掘与知识发现</td><td nowrap="nowrap">H公共选修课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S813007</td><td nowrap="nowrap">信息安全技术</td><td nowrap="nowrap">H公共选修课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">2.00</td><td nowrap="nowrap" align="center">32</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S514A01</td><td nowrap="nowrap">英语听说（二）</td><td nowrap="nowrap">I学科通识课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.50</td><td nowrap="nowrap" align="center">26</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S514B01</td><td nowrap="nowrap">英语听说（一）</td><td nowrap="nowrap">I学科通识课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.50</td><td nowrap="nowrap" align="center">26</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S514B02</td><td nowrap="nowrap">英语阅读</td><td nowrap="nowrap">I学科通识课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.50</td><td nowrap="nowrap" align="center">22</td><td nowrap="nowrap" align="center">1</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S514B03</td><td nowrap="nowrap">英语写作</td><td nowrap="nowrap">I学科通识课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.50</td><td nowrap="nowrap" align="center">22</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S606002</td><td nowrap="nowrap">自然辩证法概论</td><td nowrap="nowrap">I学科通识课</td><td nowrap="nowrap" align="center">学位课</td><td nowrap="nowrap" align="center">1.00</td><td nowrap="nowrap" align="center">16</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S913001</td><td nowrap="nowrap">参加学术讲座（不少于6次）</td><td nowrap="nowrap">F专业选修课</td><td nowrap="nowrap" align="center">非学位课</td><td nowrap="nowrap" align="center">1.00</td><td nowrap="nowrap" align="center">0</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S913002</td><td nowrap="nowrap">开题报告</td><td nowrap="nowrap">F专业选修课</td><td nowrap="nowrap" align="center">非学位课</td><td nowrap="nowrap" align="center">1.00</td><td nowrap="nowrap" align="center">0</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr><tr class="GridViewRowStyle" onMouseOver="javascript:this.bgColor=&#39;#C7F8AE&#39;;" onMouseOut="javascript:this.bgColor=&#39;#ffffff&#39;;">
+		<td nowrap="nowrap">S913101</td><td nowrap="nowrap">完成专业实践</td><td nowrap="nowrap">F专业选修课</td><td nowrap="nowrap" align="center">非学位课</td><td nowrap="nowrap" align="center">4.00</td><td nowrap="nowrap" align="center">0</td><td nowrap="nowrap" align="center">2</td><td nowrap="nowrap" align="center">&nbsp;</td>
+	</tr>
+</table>
+        <table id="Table4" cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tr>
+                <td>
+                    <span id="_ctl0_MainWork_Label1" style="color:Red;">本专业最低要求(学位学分:0.0 总学分:32.0)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="_ctl0_MainWork_lblstatus" style="color:Red;"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        </form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

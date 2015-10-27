@@ -1,0 +1,236 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="kckksearch.aspx" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWLgLcv4KWBgLYzoKDAgLIoeTuDgLIoeDuDgLIodjuDgLIodTuDgLIodDuDgLIoczuDgLIoYjtDgLIoYTtDgLXoejuDgLXoeTuDgLXodzuDgLXodjuDgLXodTuDgLXodDuDgLXoczuDgLXoYjtDgLXoYTtDgLWoejuDgLWoeTuDgLWoeDuDgLToeTuDgKsg9qmBgLh6IW8DwLo8/+1CgKvlbuvAQKwlbuvAQKtlbuvAQKulbuvAQKrlbuvAQKslbuvAQKplbuvAQKqlbuvAQKnlbuvAQKolbuvAQKZy71wApnLwXACmcvFcAKZy8lwApnLzXACmcvRcAKZy9VwApnLmXACmcudcALbvess8sf89de9pdMePKEJU69SK1L+XaxT+LCEbdesiT49I6A=" />
+        
+        
+    
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">开课目录查询</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+
+
+        
+        
+    <div id="Fin_Context">
+        
+        <div id="Fin_Box">
+            开课院系：
+            <select name="_ctl0:MainWork:txtYXSH" id="_ctl0_MainWork_txtYXSH">
+	<option selected="selected" value="">--请选择--</option>
+	<option value="01">机械自动化学院</option>
+	<option value="02">材料与冶金学院</option>
+	<option value="04">信息科学与工程学院</option>
+	<option value="05">计算机科学与技术学院</option>
+	<option value="06">管理学院</option>
+	<option value="07">文法与经济学院</option>
+	<option value="08">理学院</option>
+	<option value="09">医学院</option>
+	<option value="10">城市建设学院</option>
+	<option value="11">外国语学院</option>
+	<option value="13">艺术与设计学院</option>
+	<option value="14">中钢集团洛阳耐火材料研究院</option>
+	<option value="15">湖北汽车学院</option>
+	<option value="16">委托培养单位</option>
+	<option value="17">化学工程与技术学院</option>
+	<option value="18">资源与环境学院</option>
+	<option value="19">中钢集团武汉安全环保研究院</option>
+	<option value="20">汽车与交通工程学院 </option>
+	<option value="21">体育课部</option>
+	<option value="22">生物医学研究院</option>
+	<option value="51">马克思主义学院</option>
+	<option value="999">公共院系</option>
+
+</select>
+            &nbsp;课程编号或名称：
+            <input name="_ctl0:MainWork:txtkcbh" type="text" maxlength="9" id="_ctl0_MainWork_txtkcbh" style="width:96px;" />&nbsp;
+            <input type="image" name="_ctl0:MainWork:btnSearch" id="_ctl0_MainWork_btnSearch" src="../images/query.gif" align="absbottom" border="0" style="border-style:None;" />
+        </div>
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+            课程列表<span id="_ctl0_MainWork_lblNum">(共:840条记录)</span>
+            </div>
+            <div class="pagestopr">
+                
+            </div>
+        </div>
+        <table id="Table2" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <td valign="top">
+                   
+                    <table class="GridViewStyle" cellspacing="0" rules="all" bordercolor="#9CD7FF" border="1" id="_ctl0_MainWork_dgData" style="background-color:White;border-color:#9CD7FF;width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle" nowrap="nowrap">
+		<td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl0&#39;,&#39;&#39;)">课程编号</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl1&#39;,&#39;&#39;)">课程名称</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl2&#39;,&#39;&#39;)">先修课程</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl3&#39;,&#39;&#39;)">主讲教师</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl4&#39;,&#39;&#39;)">课程简介</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl5&#39;,&#39;&#39;)">课程总学时</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl6&#39;,&#39;&#39;)">学分</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl7&#39;,&#39;&#39;)">开课时间</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl8&#39;,&#39;&#39;)">机时</a></td><td nowrap="nowrap"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl9&#39;,&#39;&#39;)">备注</a></td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC01202</td><td nowrap="nowrap">公共安全学</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC01202&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC02201</td><td nowrap="nowrap">冶金过程理论</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC02201&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC03149</td><td nowrap="nowrap">国际学术交流方法与实践</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC03149&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>16</td><td nowrap="nowrap">1.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC03152</td><td nowrap="nowrap">工程测控技术及仪器前沿</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC03152&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>16</td><td nowrap="nowrap">1.00</td><td>秋季</td><td>&nbsp;</td><td>博硕士不同</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC03157</td><td nowrap="nowrap">机械工程学科前沿</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC03157&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>16</td><td nowrap="nowrap">1.00</td><td>秋季</td><td>&nbsp;</td><td>博硕士不同</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC04101</td><td nowrap="nowrap">控制理论中的泛函分析</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC04101&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC04102</td><td nowrap="nowrap">系统工程的优化方法</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC04102&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>编号调整</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC06301</td><td nowrap="nowrap">国家整体安全观研究</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC06301&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC06302</td><td nowrap="nowrap">中外社会治理比较研究</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC06302&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>春秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC07501</td><td nowrap="nowrap">学科前沿概论</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC07501&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>16</td><td nowrap="nowrap">1.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC07701</td><td nowrap="nowrap">现代材料分析测试技术</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC07701&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BC22101</td><td nowrap="nowrap">化工技术进展</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BC22101&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>48</td><td nowrap="nowrap">3.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01101</td><td nowrap="nowrap">矿业系统科学原理与方法</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01101&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01102</td><td nowrap="nowrap">岩石力学新进展</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01102&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01121</td><td nowrap="nowrap">湿法冶金学</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01121&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>40</td><td nowrap="nowrap">2.50</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01122</td><td nowrap="nowrap">结构化学</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01122&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>40</td><td nowrap="nowrap">2.50</td><td>春秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01123</td><td nowrap="nowrap">泥沙运动学</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01123&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>40</td><td nowrap="nowrap">2.50</td><td>春秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01202</td><td nowrap="nowrap">气溶胶科学与技术</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01202&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01204</td><td nowrap="nowrap">职业安全与卫生</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01204&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewRowStyle">
+		<td nowrap="nowrap">15BD01205</td><td nowrap="nowrap">火灾风险评估方法学</td><td>&nbsp;</td><td>&nbsp;</td><td><a href=# onclick=javascript:window.open('http://gsg.wust.edu.cn:80/pyxx/pygl/kcjjView.aspx?kcbh=15BD01205&Action=view','','toolbar=yes,scrollbar=yes;status=yes,resizable=yes,width=600,height=500') >详细内容</a></td><td>32</td><td nowrap="nowrap">2.00</td><td>秋季</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr class="GridViewPagerStyle">
+		<td colspan="10"><span>1</span>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl1&#39;,&#39;&#39;)">2</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl2&#39;,&#39;&#39;)">3</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl3&#39;,&#39;&#39;)">4</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl4&#39;,&#39;&#39;)">5</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl5&#39;,&#39;&#39;)">6</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl6&#39;,&#39;&#39;)">7</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl7&#39;,&#39;&#39;)">8</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl8&#39;,&#39;&#39;)">9</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl9&#39;,&#39;&#39;)">10</a>&nbsp;<a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl24$_ctl10&#39;,&#39;&#39;)">...</a></td>
+	</tr>
+</table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        </form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.onShow
+{
+    background:url(images/msg_bg.png) no-repeat 5px -147px; 
+    padding:0 5px 0 25px; 
+	font-size: 12px;
+	height:24px;
+	line-height:24px; 
+	vertical-align:middle;
+	display:inline-block;
+}
+.onFocus
+{
+    background:#E9F0FF url(images/msg_bg.png) no-repeat 5px -147px; 
+    padding:0 5px 0 25px; 
+	font-size: 12px;
+	height:24px;
+	line-height:24px; 
+	vertical-align:middle;
+	display:inline-block;
+}
+.onError
+{
+    background:#FFF2E9 url(images/msg_bg.png) no-repeat 5px 3px;
+    padding:0 5px 0 25px; 
+	font-size: 12px;
+	height:24px;
+	line-height:24px; 
+	vertical-align:middle;
+	display:inline-block;
+}
+.onCorrect
+{
+    background:#E9FFEB url(images/msg_bg.png) no-repeat 5px -247px;
+    padding:0 5px 0 25px; 
+	font-size: 12px;
+	height:24px;
+	line-height:24px; 
+	vertical-align:middle;
+	display:inline-block;
+}
+.onLoad
+{
+    background:#E9FFEB url(images/onLoad.gif) no-repeat 3px 3px;
+    padding:0 5px 0 25px; 
+	font-size: 12px;
+	height:24px;
+	line-height:24px; 
+	vertical-align:middle;
+	display:inline-block;
+} 

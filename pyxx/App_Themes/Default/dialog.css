@@ -1,0 +1,107 @@
+﻿/*container*/
+#ho-window{
+	background:#fff;overflow:hidden;
+	font-size:12px;font-family:'宋体';
+	border:1px #3a5774 solid;
+}
+
+/*header*/
+.ho-tl{padding-left:5px;background:#c1d9ff;}
+.ho-tr{padding-right:5px}
+.ho-tc{border-top:5px solid #c1d9ff;background:#e0edfe;overflow:hidden;height:30px;line-height:30px;}
+.ho-ttc{height:0px}
+.ho-header-text{color:#000;font-weight:bold;margin-left:5px;float:left}
+.ho-header-tools{float:right;margin-top:8px;margin-right:5px;display:inline;}
+.ho-header-tools strong{display:none}
+
+/*body*/
+.ho-ml{background:#c1d9ff;padding-left:5px;}
+.ho-mr{padding-right:5px;}
+.ho-mc{background:#fff;padding:0}
+.ho-body{overflow:auto;padding:0;font-size:12px;}
+
+/*button*/
+.ho-btn{background:#fff;text-align:center}
+
+/*footer*/
+.ho-bl{background:#c1d9ff;padding-left:5px}
+.ho-br{padding-right:5px}
+.ho-bc{height:5px;font-size:5px}
+
+/*icon*/
+.Dialog_alert{
+	padding-left:90px;
+	background:url(images/icons/info.gif) no-repeat 20px 50%
+}
+.Dialog_succeed{
+	padding-left:90px;
+	background:url(images/icons/right.gif) no-repeat 20px 50%
+}
+.Dialog_error{
+	padding-left:90px;
+	background:url(images/icons/err.gif) no-repeat 20px 50%
+}
+.Dialog_confirm{
+	padding-left:90px;
+	background:url(images/icons/ask.gif) no-repeat 20px 50%
+}
+.Dialog_alert .ho-content,.Dialog_succeed .ho-content,.Dialog_error .ho-content,.Dialog_confirm .ho-content{padding:50px 0 0}
+
+.tc_ask{
+	padding:10px 10px 10px 90px;
+	height:60px;
+	line-height:20px;
+	background:url(images/icons/ask.gif) no-repeat 20px 50%;
+	text-align:left;
+}
+.tc_ok{
+	padding:10px 10px 10px 90px;
+	height:60px;
+	line-height:20px;
+	background:url(images/icons/right.gif) no-repeat 20px 50%;
+	text-align:left;
+}
+.tc_error{
+	padding:10px 10px 10px 90px;
+	height:60px;
+	line-height:20px;
+	background:url(images/icons/err.gif) no-repeat 20px 50%;
+	text-align:left;
+}
+.tc_alert{
+	padding:10px 10px 10px 90px;
+	height:60px;
+	line-height:20px;
+	background:url(images/icons/info.gif) no-repeat 20px 50%;
+	text-align:left;
+}
+.tc_btn{ position:absolute; bottom:10px; left:40%; margin:0 auto; text-align:center;}
+
+/*图标公共定义*/
+.ho-header-tools div{
+	cursor:pointer;
+	width:15px;height:15px;float:left;margin:0px 2px
+}
+.Dialog_close{
+	background:url(images/icons/ico.gif) no-repeat -45px 0;
+	width:15px !important;
+}
+.Dialog_max{
+	background:url(images/icons/ico.gif) no-repeat -30px 0px;
+	width:15px !important;
+}
+.Dialog_min{
+	background:url(images/icons/ico.gif) no-repeat -15px 0;
+	width:15px !important;
+}
+.Dialog_normal{
+	background:url(images/icons/ico.gif) no-repeat 0 0;
+	width:15px !important;
+}
+
+/*取消确认按钮样式*/
+input.btnStyle{
+	background:url(images/icons/btn_bg.gif) no-repeat;
+	width:80px;height:21px;line-height:21px;
+	font-size:12px;color:#000;border:0;margin:10px 0
+}

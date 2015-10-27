@@ -1,0 +1,268 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>学生课表查询 </title>
+		<meta content="True" name="vs_showGrid">
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../style/Styles.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form name="Form1" method="post" action="kbcx_xs.aspx" id="Form1">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKLkNSiBwK70suzBAK3vaneCAKln/PuCgKfiqAdIwG9zJJjfLhjJV1IqYU7F7Vx0Uq6mRJ1hAOmGAuXwnI=" />
+			<TABLE style="WIDTH: 100%" cellSpacing="0" cellPadding="0" border="0">
+				<TR>
+					<TD class="" style="HEIGHT: 30px" vAlign="top" colSpan="2"><TABLE id="Table1" cellSpacing="0" cellPadding="0" width="100%" border="0">
+							<TR>
+								<TD vAlign="top" height="30">
+									<TABLE class="TitleBackColor" id="Table8" style="WIDTH: 100%; HEIGHT: 25px" cellSpacing="0"
+										cellPadding="0" border="0">
+										<TR>
+											<TD class="titlebar" style="WIDTH: 56.33%" colSpan="2">
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">学生课表查询</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+</TD>
+										</TR>
+									</TABLE>
+								</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+				<TR>
+					<TD style="HEIGHT: 50px" vAlign="top" align="center" colSpan="2">
+						<TABLE class="querybox" style="WIDTH: 95%; HEIGHT: 40px" cellSpacing="0" cellPadding="0"
+							border="0">
+							<TR>
+								<TD vAlign="middle" noWrap>
+									<TABLE class="td" style="WIDTH: 100%; HEIGHT: 92.29%" cellSpacing="0" cellPadding="0" border="0">
+										<TR>
+											<TD noWrap>学期：
+												<select name="drpxq" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;drpxq\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="drpxq">
+	<option selected="selected" value="42">2015-2016-1学期</option>
+
+</select><input type="image" name="btnSearch" id="btnSearch" src="../images/query.gif" align="absbottom" border="0" style="border-style:None;" />
+											</TD>
+										</TR>
+									</TABLE>
+								</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+				<TR>
+					<TD style="WIDTH: 712px"></TD>
+					<td class="td" vAlign="top" align="left">
+						<a id="print" class="td" href="javascript:__doPostBack(&#39;print&#39;,&#39;&#39;)">
+							<img src="../images/paintpage.gif" border="0" align="absbottom"></a><a id="lnkExit" href="../loging.aspx"><img src="../images/logout.gif" border="0" align="absbottom">&nbsp;退出</a></td>
+				</TR>
+			</TABLE>
+			<TABLE id="Table2" cellSpacing="0" cellPadding="0" width="95%" align="center" border="0">
+				<TR>
+					<TD vAlign="top" colspan="3"><table class="GridBackColor" cellspacing="0" rules="all" bordercolor="#9CD7FF" border="1" id="DataGrid1" style="background-color:White;border-color:#9CD7FF;font-size:X-Small;width:100%;border-collapse:collapse;">
+	<tr nowrap="nowrap" align="center" style="background-color:#C8E1FB;">
+		<td>&nbsp;</td><td>节次</td><td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td><td>星期六</td><td>星期日</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" rowspan="4" style="width:20px;">上午</td><td align="center" style="width:20px;">1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" rowspan="4" style="width:20px;">下午</td><td align="center" style="width:20px;">1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" rowspan="3" style="width:20px;">晚上</td><td align="center" style="width:20px;">1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr nowrap="nowrap">
+		<td align="center" style="width:20px;">3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+</table>
+						
+						
+						
+					</TD>
+				</TR>
+				<TR>
+					<TD valign="top" colSpan="3">
+						
+					</TD>
+				</TR>
+				<TR>
+					<TD vAlign="top" colSpan="3">
+						<br>
+						<TABLE id="Table3" cellSpacing="0" cellPadding="0" width="624" border="1" style="BORDER-RIGHT: 1px;BORDER-TOP: 1px;BORDER-LEFT: 1px;WIDTH: 624px;BORDER-BOTTOM: 1px"
+							height="20" borderColor="#99ff66">
+							<TR>
+								<TD style="WIDTH: 164px" vAlign="top" class="tdstyle">
+									上午:</TD>
+								<TD style="WIDTH: 191px" vAlign="top" class="tdstyle">下午:</TD>
+								<TD vAlign="top" class="tdstyle">晚上：</TD>
+							</TR>
+							<TR style="BORDER-RIGHT:1px; BORDER-TOP:1px; BORDER-LEFT:1px; BORDER-BOTTOM:1px">
+								<TD style="WIDTH: 164px" vAlign="top">
+									<table id="dgListSw" cellspacing="0" border="0" style="font-size:X-Small;width:100%;border-collapse:collapse;">
+	<tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第一节课</font>&nbsp;&nbsp;<font size="2">8:00-8:45</fong></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第二节课</font>&nbsp;&nbsp;<font size="2">8:55-9:40</fong></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第三节课</font>&nbsp;&nbsp;<font size="2">10:10-10:55</fong></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第四节课</font>&nbsp;&nbsp;<font size="2">11:05-11:50</fong></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr>
+</table></TD>
+								<TD style="WIDTH: 191px" vAlign="top">
+									<table id="dgListXw" cellspacing="0" border="0" style="font-size:X-Small;width:100%;border-collapse:collapse;">
+	<tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第一节课</font>&nbsp;&nbsp;<font size="2">14:10-14:55</font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第二节课</font>&nbsp;&nbsp;<font size="2">15:05-15:50</font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第三节课</font>&nbsp;&nbsp;<font size="2">16:00-16:45</font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第四节课</font>&nbsp;&nbsp;<font size="2">16:55-17:40</font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr>
+</table></TD>
+								<TD vAlign="top">
+									<table id="dgListWs" cellspacing="0" border="0" style="width:180px;border-collapse:collapse;">
+	<tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第一节课</font>&nbsp;&nbsp;<font size="2">19:00-19:45<font></font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第二节课</font>&nbsp;&nbsp;<font size="2">19:55-20:40<font></font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr><tr>
+		<td>
+											<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+												<TR>
+													<TD align="left"><font size="2">第三节课</font>&nbsp;&nbsp;<font size="2">20:50-21:35<font></font></TD>
+												</TR>
+											</TABLE>
+										</td>
+	</tr>
+</table></TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+		</form>
+		</FONT>
+		<script language="javascript">
+		function selDs()
+		{
+			 var thisdate = new Date();
+			  var thistime = thisdate.getTime();
+			window.open("../webcontrol/seljs.aspx?type=1&click=1&id="+thisdate+thistime,"选择任课教师","toolbar=no,status=no,resizable=no,scrollbars= no")
+		}
+		</script>
+	</body>
+</HTML>

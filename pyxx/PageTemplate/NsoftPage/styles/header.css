@@ -1,0 +1,34 @@
+body {margin:0;padding:0; font:12px "ËÎÌו", arial,sans-serif;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+ol,ul {list-style:none;}
+input{margin:0;padding:0}
+input,img{line-height:normal}
+em{font-style:normal;}
+.clear{clear:both;}
+a {color:#333333; text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{color:#ff6600;text-decoration:underline;}
+a:active{color:#333333;}
+/*LogoBanner*/
+.mainheader{width:100%;height:60px;margin:0px auto;clear:both; background:url(../images/mainheaderbg.jpg) repeat-x top;}
+.mainheader_left{float:left;width:560px;height:60px}
+.mainheader_left h1{font-weight:bold;display: block;}
+.mainheader_right{float:right;width:190px;height:36px; background:url(../images/mainheaderbg_rig.jpg); padding-left:30px; padding-top:24px}
+.mainheader_Home{background:url(../images/home.gif) no-repeat 0px -5px; padding-left:16px}
+.mainheader_Quit{background:url(../images/quit.gif) no-repeat 0px -5px; padding-left:17px}
+.mainheader_Key{background:url(../images/key.gif) no-repeat 0px -4px; padding-left:19px}
+/*HeaderNav*/
+.navbg{ float:left;width:100%;height:30px;margin:0px auto;clear:both; background:url(../images/navbg.gif) repeat-x top;}
+.navleft{float:left;width:143px; padding-left:15px;height:30px;line-height:30px; color:#fff100;font-weight:bold}
+.navleft a{color:#fff100; font-weight:bold;}
+.navleft a:hover{color:#fff100;text-decoration:underline;}
+.navx{float:right;height:30px; line-height:30px; color:#fff100;font-weight:bold; padding-right:10px;}
+.nav{float:left;height:30px;line-height:30px;overflow:hidden;background:url(../images/navbg.gif) repeat-x;}
+.nav li{line-height:30px;float:left;padding-left:2px; margin-left:-2px;background:url(../images/navx.gif) no-repeat; width:85px; text-align:center}
+.nav a{display:block;}
+.nav a.current{background:url(../images/nav_current.png) no-repeat;width:85px;text-align:center;}
+.nav a:link,.nav a:visited{color:#fff;width:85px;height:30px;}
+.nav a:hover{background:url(../images/nav_current.png) no-repeat;width:85px;text-align:center;color:#fff; text-decoration:none}

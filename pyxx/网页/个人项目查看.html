@@ -1,0 +1,272 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="djkssq.aspx" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEALfo53SDQL7xurRCQL7xubRCQL7xuLRCQL7xt7RCQL7xtrRCQL7xtbRCQL7xtLRCQL7xs7RCQL7xsrRCQLqjfFYAuuN8VgC6I3xWALpjfFYAuaN8VgC543xWAZG95ygdbqTyBFBKa+3bKHOO3YJ0ZhhW6B/7h/n1eE2" />
+        
+        
+    
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">等级考试报名</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+
+
+        
+        
+    <div id="Fin_Context">
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+            </div>
+            <div class="pagestopr">
+                
+            </div>
+        </div>
+        <table border="0" cellpadding="0" cellspacing="0" class="tables">
+            <tr>
+                <th class="tableTitle_left" colspan="3">
+                </th>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 15%">
+                    学号
+                </td>
+                <td class="table_tleft" style="width: 70%">
+                    <span id="_ctl0_MainWork_lblxh">201313704030</span>
+                </td>
+                <td align="center" width="15%" rowspan="5">
+                    <img id="_ctl0_MainWork_imgPhoto" src="../images/zp.gif" border="0" style="width:111px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 15%">
+                    姓名
+                </td>
+                <td class="table_tleft" width="35%">
+                    <span id="_ctl0_MainWork_lblxm">徐凯</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    证件类型
+                </td>
+                <td width="35%">
+                    <span id="_ctl0_MainWork_lblzjlx"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    证件号码
+                </td>
+                <td>
+                    <span id="_ctl0_MainWork_lblzjhm">422202198811024736</span>
+                    
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    当前学期等级考试信息（同一科目代码，只能申请一个级别）
+                </td>
+            </tr>
+        </table>
+        <table class="GridViewStyle" cellspacing="0" rules="all" border="1" id="_ctl0_MainWork_dgData1" style="background-color:White;width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle">
+		<td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl0&#39;,&#39;&#39;)">科目代码</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl1&#39;,&#39;&#39;)">科目名称</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl2&#39;,&#39;&#39;)">级别代码</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl3&#39;,&#39;&#39;)">级别名称</a></td><td align="center" style="width:89px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl4&#39;,&#39;&#39;)">开始日期</a></td><td align="center" style="width:89px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl5&#39;,&#39;&#39;)">截止日期</a></td><td align="center" style="width:200px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl6&#39;,&#39;&#39;)">备注</a></td><td align="center" style="width:89px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl7&#39;,&#39;&#39;)">报名日期</a></td><td align="center" style="width:89px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData1$_ctl1$_ctl8&#39;,&#39;&#39;)">状态</a></td><td align="center">操作</td>
+	</tr><tr class="GridViewRowStyle">
+		<td>001</td><td>普通话水平测试</td><td>01</td><td>普通话</td><td align="center" style="width:89px;">2013-11-12</td><td align="center" style="width:89px;">2013-11-20</td><td align="center" style="width:200px;">&nbsp;</td><td align="center" style="width:89px;">&nbsp;</td><td align="center" style="width:89px;">未报名</td><td nowrap="nowrap" align="center" style="width:50px;">
+                        
+                        
+                    </td>
+	</tr><tr class="GridViewRowStyle">
+		<td>002</td><td>大学英语</td><td>2</td><td>日语</td><td align="center" style="width:89px;">2014-08-31</td><td align="center" style="width:89px;">2014-09-16</td><td align="center" style="width:200px;">&nbsp;</td><td align="center" style="width:89px;">&nbsp;</td><td align="center" style="width:89px;">未报名</td><td nowrap="nowrap" align="center" style="width:50px;">
+                        
+                        
+                    </td>
+	</tr><tr class="GridViewRowStyle">
+		<td>002</td><td>大学英语</td><td>3</td><td>法语</td><td align="center" style="width:89px;">2014-08-31</td><td align="center" style="width:89px;">2014-09-16</td><td align="center" style="width:200px;">&nbsp;</td><td align="center" style="width:89px;">&nbsp;</td><td align="center" style="width:89px;">未报名</td><td nowrap="nowrap" align="center" style="width:50px;">
+                        
+                        
+                    </td>
+	</tr><tr class="GridViewRowStyle">
+		<td>002</td><td>大学英语</td><td>4</td><td>英语四级</td><td align="center" style="width:89px;">2014-08-31</td><td align="center" style="width:89px;">2014-09-16</td><td align="center" style="width:200px;">&nbsp;</td><td align="center" style="width:89px;">&nbsp;</td><td align="center" style="width:89px;">未报名</td><td nowrap="nowrap" align="center" style="width:50px;">
+                        
+                        
+                    </td>
+	</tr><tr class="GridViewRowStyle">
+		<td>002</td><td>大学英语</td><td>6</td><td>英语六级</td><td align="center" style="width:89px;">2014-08-31</td><td align="center" style="width:89px;">2014-09-16</td><td align="center" style="width:200px;">&nbsp;</td><td align="center" style="width:89px;">&nbsp;</td><td align="center" style="width:89px;">未报名</td><td nowrap="nowrap" align="center" style="width:50px;">
+                        
+                        
+                    </td>
+	</tr><tr class="GridViewRowStyle">
+		<td>005</td><td>大学生英语竞赛</td><td>00</td><td>大学生英语竞赛</td><td align="center" style="width:89px;">2014-12-12</td><td align="center" style="width:89px;">2014-12-24</td><td align="center" style="width:200px;">&nbsp;</td><td align="center" style="width:89px;">&nbsp;</td><td align="center" style="width:89px;">未报名</td><td nowrap="nowrap" align="center" style="width:50px;">
+                        
+                        
+                    </td>
+	</tr>
+</table>
+        <table width="95%" align="center">
+            <tr>
+                <td>
+                    <font face="宋体"></font>
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <table id="Table2" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <td valign="top">
+                    <table class="td" style="width: 100%; height: 21px" cellspacing="0" cellpadding="0"
+                        border="0">
+                        <tr>
+                            <td class="tttable">
+                                您的申请记录<span id="_ctl0_MainWork_lblNum"></span>
+                            </td>
+                            <td style="width: 120px">
+                                &nbsp;
+                            </td>
+                            <td style="width: 120px" align="right">
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="GridViewStyle" cellspacing="0" rules="all" border="1" id="_ctl0_MainWork_dgData" style="background-color:White;width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle">
+		<td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl0&#39;,&#39;&#39;)">学期</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl1&#39;,&#39;&#39;)">科目代码</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl2&#39;,&#39;&#39;)">科目名称</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl3&#39;,&#39;&#39;)">级别代码</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl4&#39;,&#39;&#39;)">级别名称</a></td><td align="center" style="width:89px;"><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl1$_ctl5&#39;,&#39;&#39;)">报名日期</a></td>
+	</tr>
+</table><div headertext="试图保存信息时，出现如下错误。" showmessagebox="True" showsummary="False" id="_ctl0_MainWork_valSum" class="td" style="color:Red;height:166px;width:249px;display:none;">
+
+</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        
+<script type="text/javascript">
+<!--
+var Page_ValidationSummaries =  new Array(document.getElementById("_ctl0_MainWork_valSum"));
+// -->
+</script>
+</form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

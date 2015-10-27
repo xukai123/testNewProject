@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>申请项目内容预览</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }		
+    </style>
+        <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" />
+        <link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" />
+        <link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" />
+        <link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" />
+        <link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" />
+        <link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" />
+        <link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>  
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>             
+			 <table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center" border="0">
+				<tr>
+					<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+					</td>
+					<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+						<span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">项目信息预览</span>
+					</td>
+					<td style="width:171px;"><a href="#"
+						target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+					<!--用户：&nbsp;&nbsp;-->
+				</tr>
+			</table>      
+      <div id="Fin_Context">
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopr" style="text-align:center">                
+              <a id="_ctl0_MainWork_WUCwdrxdj_LnkBtPrint" href="javascript:__doPostBack(&#39;_ctl0$MainWork$WUCwdrxdj$LnkBtPrint&#39;,&#39;&#39;)">
+                 <img src="http://gsg.wust.edu.cn:80/pyxx/images/worddy.png" border="0" />
+              </a>
+            </div>
+        </div>
+        <table id="Table1" border="0" cellpadding="0" cellspacing="0" class="tables">
+            <tr>
+                <th class="tableTitle_left" colspan="4">
+				   <p>&nbsp;</p>
+			    <p>项目基本信息</p></th>
+            </tr>
+            <tr>
+                <td width="12%" class="table_tcenter" style="width:25%;text-align:right"></td>
+                <td width="20%" class="table_tleft" style="width: 25%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目编号:
+              <input name="_ctl0:MainWork:txtxh" type="text" value="201313704030" readonly="readonly" id="_ctl0_MainWork_txtxh" class="txtbox" />				</td>
+                <td width="38%" class="table_tcenter" style="width:25%; text-align:right">项目名称:
+              <input name="_ctl0:MainWork:txtxm" type="text" value="徐凯" readonly="readonly" id="_ctl0_MainWork_txtxm" class="txtbox" /></td>
+                <td width="30%" class="table_tleft" style="width: 25%">				</td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"></td>
+                <td class="table_tleft" style="width: 25%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目类别:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />				</td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">项目层次:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" /> </td>
+                <td class="table_tleft" style="width: 25%">               </td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"></td>
+                <td class="table_tleft" style="width: 25%">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目来源:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />                </td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">预期时间:
+                   <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" /> </td>
+                <td class="table_tleft" style="width: 25%">               </td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"></td>
+                <td class="table_tleft" style="width: 25%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;申请金额:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />				</td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">专业班级:
+                  <input name="_ctl0:MainWork:txtdsbh" type="text" value="1302043" id="_ctl0_MainWork_txtdsbh" class="txtbox" /></td>
+                <td class="table_tleft" style="width: 25%">				</td>
+            </tr>
+            <tr>
+                 <th class="tableTitle_left" colspan="4">
+				   <p>&nbsp;</p>
+				   <p>申请人基本信息</p>			   
+				  </th>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"></td>
+                <td class="table_tleft" style="width: 35%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;申请人姓名:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />				</td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">所在学院:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" /></td>
+                <td class="table_tleft" style="width: 35%">				</td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"></td>
+                <td class="table_tleft" style="width: 35%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学 号:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />				</td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">性 别:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" /></td>
+                <td class="table_tleft" style="width: 35%">				</td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"></td>
+                <td class="table_tleft" style="width: 35%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专业班级:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />				</td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">家庭地址
+                    <input name="_ctl0:MainWork:txtjtdz" type="text" value="湖北省武汉科技大学" id="_ctl0_MainWork_txtjtdz" class="txtbox" />   </td>
+                <td class="table_tleft" style="width: 35%">              </td>
+            </tr>
+            <tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right">	</td>
+                <td class="table_tleft" style="width: 35%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家庭邮编:
+                    <input name="_ctl0:MainWork:txtcym" type="text" id="_ctl0_MainWork_txtcym" class="txtbox" />				</td>
+                <td class="table_tcenter" style="width: 25%; text-align:right">	家庭电话:
+                    <input name="_ctl0:MainWork:txtjtdh" type="text" id="_ctl0_MainWork_txtjtdh" class="txtbox" /></td>
+                <td class="table_tleft" style="width: 35%">				</td>
+            </tr>
+			<tr>
+                <td class="table_tcenter" style="width: 25%; text-align:right"><p>主要科研<br />经历或特长</p>                
+				</td>
+                <td class="table_tleft" style="width: 75%" colspan="3">
+                  <textarea name="textarea2" id="textarea2" class="txtbox" style="height:47px;width:100%;"></textarea>                  
+                </td>
+            </tr>
+			<tr>
+			   <th class="tableTitle_left" colspan="4">
+				   <p>&nbsp;</p>
+				   <p>小组成员基本信息      </p>			  </th>
+			</tr>
+            <tr>
+              <td class="table_tcenter" style="width: 25%; text-align:center">
+                    小组成员:</td>
+              <td class="table_tleft" style="width: 75%" colspan="3">
+		        <table id="_ctl0_MainWork_Htmljtzycy" class="tables">
+		          <tr>
+				    <td class="table_tleft" style="width: 65px;"> 姓名 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 学号 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 性别 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 政治面貌 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 专业 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 学历 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 分工 </td>
+					  </tr>
+					  <tr>
+						<td class="table_tleft" style="width: 65px;"><input name="_ctl0:MainWork:jttxtgx0" type="text" id="_ctl0_MainWork_jttxtgx0" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtxm0" type="text" id="_ctl0_MainWork_jttxtxm0" class="txtbox" style="width:96px;" />						                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtnl0" type="text" id="_ctl0_MainWork_jttxtnl0" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtzzmm0" type="text" id="_ctl0_MainWork_jttxtzzmm0" class="txtbox" style="width:153px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw0" type="text" id="_ctl0_MainWork_jttxtgzdw0" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw0" type="text" id="_ctl0_MainWork_jttxtgzdw0" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw0" type="text" id="_ctl0_MainWork_jttxtgzdw0" class="txtbox" style="width:155px;" />                        </td>
+					  </tr>
+					  <tr>
+						<td class="table_tleft" style="width: 65px;"><input name="_ctl0:MainWork:jttxtgx1" type="text" id="_ctl0_MainWork_jttxtgx1" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtxm1" type="text" id="_ctl0_MainWork_jttxtxm1" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtnl1" type="text" id="_ctl0_MainWork_jttxtnl1" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtzzmm1" type="text" id="_ctl0_MainWork_jttxtzzmm1" class="txtbox" style="width:153px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+					  </tr>
+					  <tr>
+						<td class="table_tleft" style="width: 65px;"><input name="_ctl0:MainWork:jttxtgx2" type="text" id="_ctl0_MainWork_jttxtgx2" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtxm2" type="text" id="_ctl0_MainWork_jttxtxm2" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtnl2" type="text" id="_ctl0_MainWork_jttxtnl2" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtzzmm2" type="text" id="_ctl0_MainWork_jttxtzzmm2" class="txtbox" style="width:153px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw2" type="text" id="_ctl0_MainWork_jttxtgzdw2" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+					  </tr>
+					  <tr>
+						<td class="table_tleft" style="width: 65px;"><input name="_ctl0:MainWork:jttxtgx3" type="text" id="_ctl0_MainWork_jttxtgx3" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtxm3" type="text" id="_ctl0_MainWork_jttxtxm3" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtnl3" type="text" id="_ctl0_MainWork_jttxtnl3" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtzzmm3" type="text" id="_ctl0_MainWork_jttxtzzmm3" class="txtbox" style="width:153px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw3" type="text" id="_ctl0_MainWork_jttxtgzdw3" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+					  </tr>
+					  <tr>
+						<td class="table_tleft" style="width: 65px;"><input name="_ctl0:MainWork:jttxtgx4" type="text" id="_ctl0_MainWork_jttxtgx4" class="txtbox" style="width:100px;" />                         </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtxm4" type="text" id="_ctl0_MainWork_jttxtxm4" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtnl4" type="text" id="_ctl0_MainWork_jttxtnl4" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtzzmm4" type="text" id="_ctl0_MainWork_jttxtzzmm4" class="txtbox" style="width:153px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw4" type="text" id="_ctl0_MainWork_jttxtgzdw4" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+					  </tr>
+                   </table>
+                </td>
+            </tr>
+            <tr>	   
+               <td class="table_tcenter" style="width: 25%; text-align:center">指导教师情况:</td>	  
+			   <td class="table_tleft" style="width: 85%" colspan="3">
+			       <table id="_ctl0_MainWork_Htmljtzycy" class="tables">
+				      <tr>
+					    <td class="table_tleft" style="width: 65px; text-align:center"> 姓名</td>
+						<td class="table_tleft" style="width: 87px; text-align:center">性别</td>
+						<td class="table_tleft" style="width: 87px; text-align:center">职称/学历</td>
+						<td class="table_tleft" style="width: 87px; text-align:center">学院</td>
+						<td class="table_tleft" style="width: 87px; text-align:center"> 专业 </td>
+						<td class="table_tleft" style="width: 87px; text-align:center">联系电话</td>
+					  </tr>
+				      <tr>
+						<td class="table_tleft" style="width: 65px;"><input name="_ctl0:MainWork:jttxtgx4" type="text" id="_ctl0_MainWork_jttxtgx4" class="txtbox" style="width:100px;" />                         </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtxm4" type="text" id="_ctl0_MainWork_jttxtxm4" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtnl4" type="text" id="_ctl0_MainWork_jttxtnl4" class="txtbox" style="width:100px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtzzmm4" type="text" id="_ctl0_MainWork_jttxtzzmm4" class="txtbox" style="width:153px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw4" type="text" id="_ctl0_MainWork_jttxtgzdw4" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+						<td class="table_tleft" style="width: 87px;"><input name="_ctl0:MainWork:jttxtgzdw1" type="text" id="_ctl0_MainWork_jttxtgzdw1" class="txtbox" style="width:155px;" />                        </td>
+					  </tr>
+				   </table>			   
+				</td>
+            </tr>
+			<tr>
+			    <th class="tableTitle_left" colspan="4">
+				   <p>&nbsp;</p>
+				   <p>课题情况</p>			  </th>
+			</tr>
+            <tr>
+			   <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right" colspan="">
+                    1、研究目的、意义:<br>				
+				</td>
+                <td class="table_tleft" style="width: 65%">
+                    <textarea name="_ctl0:MainWork:txtjljl" id="_ctl0_MainWork_txtjljl" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+            </tr>
+            <tr>
+			    <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    2、和本题相关的国内外研究现在:				</td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtcfj1" id="_ctl0_MainWork_txtcfj1" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+            </tr>
+            <tr>
+			    <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    3、研究目标、研究内容拟解决的关键问题:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+           </tr>
+		   <tr>
+		        <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    4、拟采取的研究方法技术路线:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+           </tr>
+		   <tr>
+		        <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    5、申请经费金额开支预算及承诺:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+           </tr>
+		   <tr>
+		        <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    6、指导教师对选题报告的意见:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+           </tr>
+		   <tr>
+			    <th class="tableTitle_left" colspan="4">
+				   <p>&nbsp;</p>
+				   <p>评审情况</p>			  </th>
+			</tr>
+			<tr>
+			    <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    1、学院团委推荐意见:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+           </tr>
+		   <tr>
+		        <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    2、学院专家组意见:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                  <textarea name="textarea" id="textarea" class="txtbox" style="height:47px;width:472px;"></textarea>
+                </td>
+           </tr>
+		   <tr>
+		        <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    3、学院推荐意见:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				</td>
+           </tr>
+		   <tr>
+		        <td></td>
+                <td class="table_tcenter" style="width: 35%; text-align:right">
+                    4、科技创新小组审批意见:			    </td>
+                <td class="table_tleft" style="width: 65%" colspan="2">
+                    <textarea name="_ctl0:MainWork:txtBZ" id="_ctl0_MainWork_txtBZ" class="txtbox" style="height:47px;width:472px;"></textarea>				
+				</td>
+           </tr>
+        </table>
+		<br /><br /><br /><br /><br /><br />
+</div>
+        
+</form>
+    </div>
+</body>
+</html>

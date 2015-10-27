@@ -1,0 +1,432 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body
+        {
+            margin: 30px;
+            padding: 0;
+            font: 12px "宋体" , arial,sans-serif;
+            color: #6c6c6c;
+            background: #f6f6f6;
+        }
+        div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p
+        {
+            padding: 0;
+            margin: 0;
+        }
+        table, td, tr, th
+        {
+            font-size: 12px;
+        }
+        li
+        {
+            list-style-type: none;
+        }
+        img
+        {
+            vertical-align: top;
+            border: 0;
+        }
+        ol, ul
+        {
+            list-style: none;
+        }
+        input
+        {
+            margin: 0;
+            padding: 0;
+        }
+        input, img
+        {
+            line-height: normal;
+        }
+        em
+        {
+            font-style: normal;
+        }
+        .clear
+        {
+            clear: both;
+        }
+        a
+        {
+            color: #6c6c6c;
+            text-decoration: none;
+        }
+        a:visited
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #4978be;
+            text-decoration: underline;
+        }
+        a:active
+        {
+            color: #6c6c6c;
+        }
+        .printframe
+        {
+            width: 640px;
+            margin: 0px auto;
+            clear: both;
+            padding: 40px;
+            border: 1px solid #d9d9d9;
+            background: #fff;
+        }
+        .printframe h1
+        {
+            font-family: 微软雅黑,黑体,Verdana;
+            font-size: 22px;
+            line-height: 40px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            overflow: hidden;
+            text-align: center;
+            display: block;
+            color: #333333;
+        }
+        .printframe h2
+        {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            border-bottom: 1px solid #d4d4d4;
+            padding-bottom: 6px;
+            margin: 0 0 10px;
+            clear: both;
+            color: #333333;
+        }
+        .printframe p
+        {
+            font-size: 14px;
+            line-height: 26px;
+            text-indent: 2em;
+            margin-bottom: 10px;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            overflow: hidden;
+            font-size: 14px;
+            clear: both;
+            line-height: 30px;
+            word-wrap: break-word;
+        }
+        .printframe a, .printframe a:visited
+        {
+            color: #1E50A2;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        .printframe a:hover
+        {
+            color: #e50303;
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="pyfaprint.aspx?xslb=10&amp;zydm=081400&amp;yxsh=18" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+        
+        
+    
+
+        
+        
+    <div class="printframe">
+        <h1><span id="_ctl0_MainWork_lblTitle">武汉科技大学硕士研究生培养方案</span></h1>
+        <h2>
+            (<span id="_ctl0_MainWork_xkml">学科门类：</span>
+            <span id="_ctl0_MainWork_lblml"></span>&nbsp;&nbsp;
+            <span id="_ctl0_MainWork_xkdm">一级学科代码：</span>
+            <span id="_ctl0_MainWork_lblyjxkdm"></span>&nbsp;
+            <span id="_ctl0_MainWork_lblxkmc">一级学科名称：</span>
+            <span id="_ctl0_MainWork_lblyjxkmc"></span>）<br />
+            <span id="_ctl0_MainWork_lblleft"></span>
+            <span id="_ctl0_MainWork_ejxkdm">(二级学科代码：</span>
+            <span id="_ctl0_MainWork_lblejxkdm">081400</span>&nbsp;&nbsp;
+            <span id="_ctl0_MainWork_ejxkmc">二级学科名称：</span>
+            <span id="_ctl0_MainWork_lblejxkmc"></span>
+            <span id="_ctl0_MainWork_lblright">)</span>
+        </h2>
+        <h2>
+            一、培养目标</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblpymb"></span>
+        </p>
+        <h2>
+            二、学习年限</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblxxnx"></span>
+        </p>
+        <h2>
+            三、研究方向</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblyjfx"></span>
+        </p>
+        <h2>
+            四、课程设置与考试要求</h2>
+        
+            <table class="GridViewStyle" cellspacing="0" cellpadding="0" align="Center" rules="all" border="1" id="_ctl0_MainWork_dgData" style="width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle" nowrap="nowrap" align="center">
+		<td nowrap="nowrap" style="width:60px;">组别</td><td nowrap="nowrap">课程编号</td><td nowrap="nowrap">课程名称</td><td nowrap="nowrap">学时</td><td nowrap="nowrap">学分</td><td nowrap="nowrap">开课时间</td><td nowrap="nowrap">授课方式</td><td nowrap="nowrap">考试方式</td><td nowrap="nowrap">备注</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap" align="center" valign="middle" rowspan="1">A</td><td nowrap="nowrap">S506001</td><td nowrap="nowrap">中国特色社会主义理论与实践研究</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td><td nowrap="nowrap" valign="middle">&nbsp;</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap" align="center" valign="middle" rowspan="2">F</td><td nowrap="nowrap">S908001</td><td nowrap="nowrap">参加学术讲座（不少于6次）</td><td nowrap="nowrap">0</td><td nowrap="nowrap">1.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">&nbsp;</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S908002</td><td nowrap="nowrap">开题报告</td><td nowrap="nowrap">0</td><td nowrap="nowrap">1.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">&nbsp;</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap" align="center" valign="middle" rowspan="5">G</td><td nowrap="nowrap">S708001</td><td nowrap="nowrap">弹塑性力学</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S708002</td><td nowrap="nowrap">有限元原理与程序应用</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S708003</td><td nowrap="nowrap">高等土力学</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S708004</td><td nowrap="nowrap">高等流体力学</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S708005</td><td nowrap="nowrap">高等传热学</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap" align="center" valign="middle" rowspan="32">H</td><td nowrap="nowrap">S808001</td><td nowrap="nowrap">地基处理与深基坑工程</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808002</td><td nowrap="nowrap">边坡工程与支挡结构</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808003</td><td nowrap="nowrap">地下结构</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808004</td><td nowrap="nowrap">高等钢结构理论</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808005</td><td nowrap="nowrap">高等钢筋混凝土结构学</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808006</td><td nowrap="nowrap">高层结构施工技术</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808007</td><td nowrap="nowrap">废水处理理论与技术</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808008</td><td nowrap="nowrap">给水处理理论与技术</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808009</td><td nowrap="nowrap">废水回用技术</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808010</td><td nowrap="nowrap">给水排水管网工程设计优化</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808011</td><td nowrap="nowrap">现代水体修复技术</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808012</td><td nowrap="nowrap">水工艺试验与研究方法</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808013</td><td nowrap="nowrap">固体废物处理与处置</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808014</td><td nowrap="nowrap">建筑给水排水理论与技术</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808015</td><td nowrap="nowrap">计算流体力学与应用</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808016</td><td nowrap="nowrap">测试技术与数据处理</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808017</td><td nowrap="nowrap">流体系统的调节与控制</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808018</td><td nowrap="nowrap">建筑节能原理与技术</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808019</td><td nowrap="nowrap">能源经济学</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808020</td><td nowrap="nowrap">暖通空调新技术</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808021</td><td nowrap="nowrap">地质灾害预测与防治</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808022</td><td nowrap="nowrap">高等桥梁结构理论</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808023</td><td nowrap="nowrap">路基路面结构设计理论</td><td nowrap="nowrap">40</td><td nowrap="nowrap">2.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808024</td><td nowrap="nowrap">建筑设计及其理论</td><td nowrap="nowrap">64</td><td nowrap="nowrap">4.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808025</td><td nowrap="nowrap">建筑信息建模技术与应用</td><td nowrap="nowrap">48</td><td nowrap="nowrap">3.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808026</td><td nowrap="nowrap">可持续建筑设计</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808027</td><td nowrap="nowrap">土工试验与原位测试</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808028</td><td nowrap="nowrap">基础工程学</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808029</td><td nowrap="nowrap">历史建筑构造</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808030</td><td nowrap="nowrap">城乡公共安全防灾规划</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808031</td><td nowrap="nowrap">结构振动控制</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S808032</td><td nowrap="nowrap">建设系统工程学</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap" align="center" valign="middle" rowspan="15">I</td><td nowrap="nowrap">S606002</td><td nowrap="nowrap">自然辩证法概论</td><td nowrap="nowrap">16</td><td nowrap="nowrap">1.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">硕士必选一门</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S606003</td><td nowrap="nowrap">马克思主义与社会科学方法论</td><td nowrap="nowrap">16</td><td nowrap="nowrap">1.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S607003</td><td nowrap="nowrap">概率与数理统计</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S607004</td><td nowrap="nowrap">矩阵分析</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S607005</td><td nowrap="nowrap">数值分析</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考试</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S607006</td><td nowrap="nowrap">数理方程与特殊函数</td><td nowrap="nowrap">32</td><td nowrap="nowrap">2.00</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S514A01</td><td nowrap="nowrap">英语听说（二）</td><td nowrap="nowrap">26</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">B班必修</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S514A02</td><td nowrap="nowrap">高级英语听说</td><td nowrap="nowrap">26</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">A班必修</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S514A03</td><td nowrap="nowrap">科技文献英语阅读</td><td nowrap="nowrap">22</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S514B01</td><td nowrap="nowrap">英语听说（一）</td><td nowrap="nowrap">26</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">B班必修</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S514B02</td><td nowrap="nowrap">英语阅读</td><td nowrap="nowrap">22</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">1</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S514B03</td><td nowrap="nowrap">英语写作</td><td nowrap="nowrap">22</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S614A04</td><td nowrap="nowrap">学术论文英语写作</td><td nowrap="nowrap">24</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td><td nowrap="nowrap" valign="middle">A班必修两门</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S614A05</td><td nowrap="nowrap">科技英语翻译</td><td nowrap="nowrap">24</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr><tr nowrap="nowrap" align="center" style="height:25px;">
+		<td nowrap="nowrap">S614A06</td><td nowrap="nowrap">英语国家文化</td><td nowrap="nowrap">24</td><td nowrap="nowrap">1.50</td><td nowrap="nowrap">2</td><td nowrap="nowrap">面授讲课</td><td nowrap="nowrap">考查</td>
+	</tr>
+</table>
+            <table id="table4" width="660" align="center" border="0">
+                <tr>
+                    <td align="left" style="line-height:20px;">
+                        <font face="宋体">备注:</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="line-height:20px;">
+                        <font face="宋体">
+                            <table id="_ctl0_MainWork_dgkclx" cellspacing="2" border="0" style="width:100%;">
+	<tr>
+		<td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl0_lblkclx">A公共学位课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl1_lblkclx">B专业学位课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl2_lblkclx">C研究方向课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl3_lblkclx">D素质课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl4_lblkclx">E技能选修课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl5_lblkclx">F专业选修课</span>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl6_lblkclx">G学科基础课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl7_lblkclx">H公共选修课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl8_lblkclx">I学科通识课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl9_lblkclx">T补修课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl10_lblkclx">Y研究环节</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl11_lblkclx">Z专业实践</span>
+                                </td>
+	</tr>
+</table></font>
+                    </td>
+                </tr>
+            </table>
+        <h2>
+            五、培养环节</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblpyhj"></span>
+        </p>
+        <h2>
+            六、培养方式</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblpyfs"></span>
+        </p>
+        <h2>
+            七、必读书目</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblbdsm"></span>
+        </p>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        </form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

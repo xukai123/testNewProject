@@ -1,0 +1,512 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="xsfblwdj.aspx" language="javascript" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4OTE0NjEzMTMPZBYCZg9kFgICAQ9kFgICBQ9kFhQCCA8QDxYGHg1EYXRhVGV4dEZpZWxkBQJtYx4ORGF0YVZhbHVlRmllbGQFAmRtHgtfIURhdGFCb3VuZGdkEBUCDS0t6K+36YCJ5oupLS0G576O5Zu9FQIAAjAyFCsDAmdnZGQCCQ8QDxYGHwAFAm1jHwEFAmRtHwJnZBAVAw0tLeivt+mAieaLqS0tBuS4gOWMugbkuozljLoVAwACMDECMDIUKwMDZ2dnZGQCDw8QDxYGHwAFAm1jHwEFAmRtHwJnZBAVBA0tLeivt+mAieaLqS0tBuaxieivrQboi7Hor60G5L+E6K+tFQQAAjAxAjAyAjAzFCsDBGdnZ2dkZAIQDxAPFgYfAAUCbWMfAQUCZG0fAmdkEBUIDS0t6K+36YCJ5oupLS0M5Z+656GA56CU56m2DOW6lOeUqOeglOeptgzlvIDlj5HnoJTnqbYM55CG6K6656CU56m2DOW3peeoi+aKgOacrw/ot6jlrabnp5HnoJTnqbYG5YW25a6DFQgAATEBMgEzATQBNQE2ATkUKwMIZ2dnZ2dnZ2dkZAIUDxAPFgYfAAUEZG1tYx8BBQJkbR8CZ2QQFQMNLS3or7fpgInmi6ktLQbnrKzkuIAY5a+85biI56ys5LiA5a2m55Sf56ys5LqMFQMAATEBMhQrAwNnZ2dkZAIcDxAPFgYfAAUCbWMfAQUCZG0fAmdkEBUEDS0t6K+36YCJ5oupLS0CRUkESVNUUANTQ0kVBAACRUkESVNUUANTQ0kUKwMEZ2dnZ2RkAh4PEA8WBh8ABQJtYx8BBQJkbR8CZ2QQFQkNLS3or7fpgInmi6ktLRLkuIDnsbvph43opoHmnJ/liIoS5LqM57G76YeN6KaB5pyf5YiKEuS4ieexu+mHjeimgeacn+WIighTQ0kgMeWMughTQ0kgMuWMughTQ0kgM+WMughTQ0kgNOWMugblhbblroMVCQADMTExAzExMgIxMgIyMQIyMgIyMwIyNAI1MRQrAwlnZ2dnZ2dnZ2cWAWZkAiwPDxYCHgRUZXh0BRAo5YWxOjDmnaHorrDlvZUpZGQCLQ8PFgIeCEFyclBhcm1zZGRkAi4PPCsACwEADxYMHghQYWdlU2l6ZQIKHghEYXRhS2V5cxYAHglQYWdlQ291bnQCAR4LXyFJdGVtQ291bnRmHhVfIURhdGFTb3VyY2VJdGVtQ291bnRmHhBDdXJyZW50UGFnZUluZGV4ZmRkZHq/E8lw7Rp/87SNVK7bRCNCObCFgmcEpArLMopaG8MD" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src="/pyxx/WebResource.axd?d=js_e-ethGqYybhYyAl0_RA2&amp;t=635694469926296991" type="text/javascript"></script>
+
+
+<script src="/pyxx/WebResource.axd?d=ccx7oQQHEQvVCPW426X4dx6_KGOZtZX45H_M30Joua01&amp;t=635694469926296991" type="text/javascript"></script>
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+// -->
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWUwKktLP0BAKeqLrVAQKhydqxCALk6JWgAQKo6737DwK4hN+WAwKn64H8DwK3hOeRAwK3hOORAwKBvJ3wDgKxwO30CgLZheTjDgLp6PWcAQKvwPX0CgKN+5OtBQKdlPXACQKdlPHACQKdlM3ACQLey7aQBwLRpJz+CwLQpJz+CwLTpJz+CwLSpJz+CwLVpJz+CwLUpJz+CwLJpJz+CwLukvW4BQK6vr6WDQK10ZT4AQK00ZT4AQLukoXYAwL/z6qYBwLvrMBGAqqVwaYLAqX668gHAqT668gHAqf668gHAqb668gHAqH668gHAqD668gHAqP668gHArL668gHAr3668gHAqX6q8sHAtjomYoEAvPRt58OAvie37oLAqPxmcoHArXB1qIGAqLzwb8MAoLSg6IOAsTAjfUKAsTAjfUKAoDXqroPApvAyJEFAsuv75gGAsqv65gGAsqv75gGAsqv05gGAsqv15gGAs+v65gGAqq+3fAMAp6b1ssOAt6ngPYFAvWv+PQKAtWb3rkIAtqbnqMCArOygI4IAqqygI4IApfQ7uULAvTukTMCq5Cc9QwCrcbj7AgCyuGo+QMCptbdyw4CsJW7rwECrZW7rwECrpW7rwECq5W7rwECrJW7rwECqZW7rwECqpW7rwECp5W7rwEarqaP5Tuh6aLzLMeQ9kRQJPAJRN14aATbBGkYcEp72w==" />
+        
+        
+    
+
+
+<FONT face=宋体></FONT>
+
+
+<table id="Table1" style="WIDTH:100%; HEIGHT: 26px; table-layout:fixed; font-size:12px;" cellSpacing="0" cellPadding="0" align="center"
+	border="0">
+	<tr>
+		<td style="height:26px; width:20px; background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_03_left.gif);" >
+		</td>
+		<td style="background:url(http://gsg.wust.edu.cn:80/pyxx/Images/title_02.gif); text-align:left;" >
+            <span id="Span1" style="padding-left:10px; height:26px; line-height:26px;">学生发表论文情况登记</span>
+        </td>
+		<td style="width:171px;"><a href="#"
+            target="_blank" style=" text-decoration:none;"><img src="http://gsg.wust.edu.cn:80/pyxx/Images/title_03_rig.gif" style="border:0px;"></img></a></td>
+		<!--用户：&nbsp;&nbsp;-->
+	</tr>
+</table>
+
+
+        
+        
+    <div id="Fin_Context">
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+                
+            </div>
+            <div class="pagestopr">
+                <a id="_ctl0_MainWork_cmdAdd" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;_ctl0:MainWork:cmdAdd&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"><img src="../images/bc.png" border="0"></a>
+            </div>
+        </div>
+        <table class="tables" cellspacing="0" cellpadding="0" width="100%" align="center">
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    论文名称
+                    
+                </td>
+                <td style="height: 32px" width="35%" colspan="3">
+                    <input name="_ctl0:MainWork:txtlwmc" type="text" maxlength="200" id="_ctl0_MainWork_txtlwmc" class="edline" style="border-width:1px;border-style:solid;width:400px;" /><span controltovalidate="_ctl0_MainWork_txtlwmc" errormessage="[论文名称]必须输入" id="_ctl0_MainWork_RequiredFieldValidator4" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;visibility:hidden;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    发表刊物名
+                </td>
+                <td style="height: 32px" width="35%" colspan="3">
+                    <input name="_ctl0:MainWork:txtkwm" type="text" maxlength="100" id="_ctl0_MainWork_txtkwm" class="edline" style="border-width:1px;border-style:solid;width:400px;" />
+                        <span controltovalidate="_ctl0_MainWork_txtkwm" errormessage="[刊物名]必须输入" id="_ctl0_MainWork_RequiredFieldValidator3" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;visibility:hidden;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">刊物国别</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <font face="宋体">
+                        <select name="_ctl0:MainWork:drpkwgb" id="_ctl0_MainWork_drpkwgb">
+	<option value="">--请选择--</option>
+	<option value="02">美国</option>
+
+</select>
+                    </font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">刊物分区（大区）</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <select name="_ctl0:MainWork:drpkwfq" id="_ctl0_MainWork_drpkwfq">
+	<option value="">--请选择--</option>
+	<option value="01">一区</option>
+	<option value="02">二区</option>
+
+</select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">国际标准刊号（ISSN号）</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtkh" type="text" maxlength="40" id="_ctl0_MainWork_txtkh" class="edline" style="border-width:1px;border-style:solid;width:200px;" /><font face="宋体">（如：1001-960X）</font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">发表日期</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtfbsj" type="text" id="_ctl0_MainWork_txtfbsj" class="Wdate" onfocus="WdatePicker()" style="width:86px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    国内统一刊号（CN）
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtcn" type="text" maxlength="10" id="_ctl0_MainWork_txtcn" class="edline" style="border-width:1px;border-style:solid;width:200px;" /><font face="宋体">（如：CN11-1789）</font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    刊物卷号
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtkwjh" type="text" maxlength="10" id="_ctl0_MainWork_txtkwjh" class="edline" style="border-width:1px;border-style:solid;width:200px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    刊物期号
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtfbqh" type="text" maxlength="10" id="_ctl0_MainWork_txtfbqh" class="edline" style="border-width:1px;border-style:solid;width:200px;" />
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    语种
+                </td>
+                <td style="height: 32px" width="35%">
+                    <font face="宋体">
+                        <select name="_ctl0:MainWork:drpyz" id="_ctl0_MainWork_drpyz">
+	<option value="">--请选择--</option>
+	<option value="01">汉语</option>
+	<option value="02">英语</option>
+	<option value="03">俄语</option>
+
+</select>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    论文类型
+                </td>
+                <td style="height: 32px" width="35%">
+                    <font face="宋体">
+                        <select name="_ctl0:MainWork:drplwlx" id="_ctl0_MainWork_drplwlx">
+	<option value="">--请选择--</option>
+	<option value="1">基础研究</option>
+	<option value="2">应用研究</option>
+	<option value="3">开发研究</option>
+	<option value="4">理论研究</option>
+	<option value="5">工程技术</option>
+	<option value="6">跨学科研究</option>
+	<option value="9">其它</option>
+
+</select>
+                    </font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    第一作者
+                </td>
+                <td style="height: 32px" width="35%">
+                    
+                    <input name="_ctl0:MainWork:txtdyzz" type="text" maxlength="10" id="_ctl0_MainWork_txtdyzz" class="edline" style="border-width:1px;border-style:solid;width:142px;" />
+                            作者排名
+                            <select name="_ctl0:MainWork:txtzzpm" id="_ctl0_MainWork_txtzzpm">
+	<option value="">--请选择--</option>
+	<option value="1">第一</option>
+	<option value="2">导师第一学生第二</option>
+
+</select>
+                    <span controltovalidate="_ctl0_MainWork_txtzzpm" errormessage="必须选择" id="_ctl0_MainWork_RequiredFieldValidator1" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;visibility:hidden;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">第二作者</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtdezz" type="text" maxlength="10" id="_ctl0_MainWork_txtdezz" class="edline" style="border-width:1px;border-style:solid;width:142px;" />
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">第一通讯作者</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtdytxzz" type="text" maxlength="10" id="_ctl0_MainWork_txtdytxzz" class="edline" style="border-width:1px;border-style:solid;width:142px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">学生第一署名单位</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtzzdysmdw" type="text" maxlength="10" id="_ctl0_MainWork_txtzzdysmdw" class="edline" style="border-width:1px;border-style:solid;width:142px;" />
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">导师排名</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <select name="_ctl0:MainWork:drpdspm" id="_ctl0_MainWork_drpdspm">
+	<option value=""></option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+
+</select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    开始页数
+                </td>
+                <td style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtksys" type="text" maxlength="5" id="_ctl0_MainWork_txtksys" class="edline" style="border-width:1px;border-style:solid;width:80px;" />结束页数<input name="_ctl0:MainWork:txtjsys" type="text" maxlength="5" id="_ctl0_MainWork_txtjsys" class="edline" style="border-width:1px;border-style:solid;width:72px;" />
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    检索情况
+                </td>
+                <td style="height: 32px" width="35%">
+                    <select name="_ctl0:MainWork:txtslqk" id="_ctl0_MainWork_txtslqk">
+	<option value="">--请选择--</option>
+	<option value="EI">EI</option>
+	<option value="ISTP">ISTP</option>
+	<option value="SCI">SCI</option>
+
+</select>
+                    <font face="宋体" color="#ff0000">（CPCI-S检索即为原ISTP检索）</font>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">检索号</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <font face="宋体">
+                        <input name="_ctl0:MainWork:txtjsh" type="text" maxlength="40" id="_ctl0_MainWork_txtjsh" class="edline" style="border-width:1px;border-style:solid;width:200px;" /></font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font style="background-color: #f0f9f8">等级</font>
+                </td>
+                <td style="height: 32px" width="35%">
+                    <select name="_ctl0:MainWork:txtfbnb" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;_ctl0$MainWork$txtfbnb\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="_ctl0_MainWork_txtfbnb">
+	<option selected="selected" value="">--请选择--</option>
+	<option value="111">一类重要期刊</option>
+	<option value="112">二类重要期刊</option>
+	<option value="12">三类重要期刊</option>
+	<option value="21">SCI 1区</option>
+	<option value="22">SCI 2区</option>
+	<option value="23">SCI 3区</option>
+	<option value="24">SCI 4区</option>
+	<option value="51">其它</option>
+
+</select>
+                    <span controltovalidate="_ctl0_MainWork_txtfbnb" errormessage="[发表类别]必须选择" id="_ctl0_MainWork_RequiredFieldValidator2" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;visibility:hidden;">*</span><font face="宋体"></font>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">发表情况</font>
+                </td>
+                <td class="tdstyle" style="height: 32px" width="35%">
+                    <font face="宋体">
+                        <select name="_ctl0:MainWork:drofbqk" id="_ctl0_MainWork_drofbqk">
+	<option value="见刊">见刊</option>
+	<option value="录用">录用</option>
+
+</select>
+                    </font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">刊物影响因子</font>
+                </td>
+                <td class="tdstyle" style="height: 32px" width="35%">
+                    <font face="宋体">
+                        <input name="_ctl0:MainWork:txtyxyz" type="text" maxlength="5" id="_ctl0_MainWork_txtyxyz" class="edline" style="border-width:1px;border-style:solid;width:64px;" />&nbsp;影响因子年份
+                        <input name="_ctl0:MainWork:txtyxyznf" type="text" maxlength="5" id="_ctl0_MainWork_txtyxyznf" class="edline" style="border-width:1px;border-style:solid;width:48px;" /></font>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    <font face="宋体">被引次数</font>
+                </td>
+                <td class="tdstyle" style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtbycs" type="text" maxlength="5" id="_ctl0_MainWork_txtbycs" class="edline" style="border-width:1px;border-style:solid;width:48px;" /><font face="宋体">（请输入整数【如：1】或置空）</font>
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    版本号
+                </td>
+                <td class="tdstyle" style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtbbh" type="text" maxlength="10" id="_ctl0_MainWork_txtbbh" class="edline" style="border-width:1px;border-style:solid;width:200px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    出版地
+                </td>
+                <td class="tdstyle" style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtcbd" type="text" maxlength="10" id="_ctl0_MainWork_txtcbd" class="edline" style="border-width:1px;border-style:solid;width:200px;" />
+                </td>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    出版社
+                </td>
+                <td class="tdstyle" style="height: 32px" width="35%">
+                    <input name="_ctl0:MainWork:txtcbs" type="text" maxlength="10" id="_ctl0_MainWork_txtcbs" class="edline" style="border-width:1px;border-style:solid;width:200px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    对应论文章节
+                </td>
+                <td style="height: 32px" width="35%" colspan="3">
+                    <textarea name="_ctl0:MainWork:txtdylwzj" id="_ctl0_MainWork_txtdylwzj" class="edline" style="border-width:1px;border-style:solid;height:40px;width:657px;">
+</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdstyle" style="height: 32px" align="center" width="15%">
+                    备注
+                </td>
+                <td style="height: 32px" width="35%" colspan="3">
+                    <textarea name="_ctl0:MainWork:txtbz" id="_ctl0_MainWork_txtbz" class="edline" style="border-width:1px;border-style:solid;height:40px;width:657px;">
+</textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="prompt">
+            <h2><span id="_ctl0_MainWork_lbltitle">(修改时论文题目不可修改，如需修改请先删除重新录入!)</span></h2>
+        </div>
+        <div id="Div1" class="clearfix">
+            <div class="pagestopl">
+                论文列表<span id="_ctl0_MainWork_lblNum">(共:0条记录)</span>
+            </div>
+            <div class="pagestopr">
+                <a id="_ctl0_MainWork_WUCxsfblwdjdy_LnkBtPrint" href="javascript:__doPostBack(&#39;_ctl0$MainWork$WUCxsfblwdjdy$LnkBtPrint&#39;,&#39;&#39;)">
+    <img src="http://gsg.wust.edu.cn:80/pyxx/images/worddy.png" border="0" />
+</a>
+
+<input type="hidden" name="_ctl0:MainWork:WUCxsfblwdjdy:HFpath" id="_ctl0_MainWork_WUCxsfblwdjdy_HFpath" value="D:\Gmis\pyxx\WordCells\xsfblwdj.doc" />
+<input type="hidden" name="_ctl0:MainWork:WUCxsfblwdjdy:HFfilename" id="_ctl0_MainWork_WUCxsfblwdjdy_HFfilename" value="学生发表论文情况表" />
+<input type="hidden" name="_ctl0:MainWork:WUCxsfblwdjdy:HFdatatype" id="_ctl0_MainWork_WUCxsfblwdjdy_HFdatatype" value="xsfblwdj" />
+            </div>
+        </div>
+        <table class="GridViewStyle" cellspacing="0" rules="all" border="1" id="_ctl0_MainWork_dgData" style="width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle">
+		<td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl1&#39;,&#39;&#39;)">论文题目</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl2&#39;,&#39;&#39;)">期刊名称</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl3&#39;,&#39;&#39;)">期刊ISSN号</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl4&#39;,&#39;&#39;)">发表时间</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl5&#39;,&#39;&#39;)">开始页数</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl6&#39;,&#39;&#39;)">结束页数</a></td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl7&#39;,&#39;&#39;)">等级</a></td><td align="center">修改</td><td align="center">删除</td><td><a href="javascript:__doPostBack(&#39;_ctl0$MainWork$dgData$_ctl2$_ctl8&#39;,&#39;&#39;)">审核</a></td>
+	</tr>
+</table>
+        <script>
+            var insertEmpty = function () {
+                try {
+                    var tableid = '_ctl0_MainWork_dgData';
+                    var dgdata = document.getElementById(tableid);
+                    var rows = dgdata.rows.length;
+                    var cells = dgdata.rows[0].cells.length;
+                    if (rows == 1) {
+                        var tr = "<tr><td colspan='" + cells + "'><div class='nocon'><ul><li>没查询到相关内容</li></ul></div></td></tr>"
+                        $('#' + tableid).append(tr);
+                    }
+                }
+                catch (e)
+            { }
+            } ();
+        </script>
+        <div headertext="试图保存信息时，出现如下错误。" showmessagebox="True" showsummary="False" id="_ctl0_MainWork_valSum" class="td" style="color:Red;height:166px;width:249px;display:none;">
+
+</div>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        
+<script type="text/javascript">
+<!--
+var Page_ValidationSummaries =  new Array(document.getElementById("_ctl0_MainWork_valSum"));
+var Page_Validators =  new Array(document.getElementById("_ctl0_MainWork_RequiredFieldValidator4"), document.getElementById("_ctl0_MainWork_RequiredFieldValidator3"), document.getElementById("_ctl0_MainWork_RequiredFieldValidator1"), document.getElementById("_ctl0_MainWork_RequiredFieldValidator2"));
+// -->
+</script>
+
+
+<script type="text/javascript">
+<!--
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        // -->
+</script>
+</form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>

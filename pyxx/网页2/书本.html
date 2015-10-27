@@ -1,0 +1,322 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body
+        {
+            margin: 30px;
+            padding: 0;
+            font: 12px "宋体" , arial,sans-serif;
+            color: #6c6c6c;
+            background: #f6f6f6;
+        }
+        div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p
+        {
+            padding: 0;
+            margin: 0;
+        }
+        table, td, tr, th
+        {
+            font-size: 12px;
+        }
+        li
+        {
+            list-style-type: none;
+        }
+        img
+        {
+            vertical-align: top;
+            border: 0;
+        }
+        ol, ul
+        {
+            list-style: none;
+        }
+        input
+        {
+            margin: 0;
+            padding: 0;
+        }
+        input, img
+        {
+            line-height: normal;
+        }
+        em
+        {
+            font-style: normal;
+        }
+        .clear
+        {
+            clear: both;
+        }
+        a
+        {
+            color: #6c6c6c;
+            text-decoration: none;
+        }
+        a:visited
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #4978be;
+            text-decoration: underline;
+        }
+        a:active
+        {
+            color: #6c6c6c;
+        }
+        .printframe
+        {
+            width: 640px;
+            margin: 0px auto;
+            clear: both;
+            padding: 40px;
+            border: 1px solid #d9d9d9;
+            background: #fff;
+        }
+        .printframe h1
+        {
+            font-family: 微软雅黑,黑体,Verdana;
+            font-size: 22px;
+            line-height: 40px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            overflow: hidden;
+            text-align: center;
+            display: block;
+            color: #333333;
+        }
+        .printframe h2
+        {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            border-bottom: 1px solid #d4d4d4;
+            padding-bottom: 6px;
+            margin: 0 0 10px;
+            clear: both;
+            color: #333333;
+        }
+        .printframe p
+        {
+            font-size: 14px;
+            line-height: 26px;
+            text-indent: 2em;
+            margin-bottom: 10px;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            overflow: hidden;
+            font-size: 14px;
+            clear: both;
+            line-height: 30px;
+            word-wrap: break-word;
+        }
+        .printframe a, .printframe a:visited
+        {
+            color: #1E50A2;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        .printframe a:hover
+        {
+            color: #e50303;
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function getOs() {
+            var OsObject = "";
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                alert(navigator.appVersion);
+            }
+        }
+</script>
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form name="aspnetForm" method="post" action="pyfaprint.aspx?xslb=10&amp;zydm=0819Z3&amp;yxsh=08" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTEzNzgwMjU5Ng9kFgJmD2QWAgIBD2QWAgIFD2QWHAIBDw8WAh4EVGV4dAUt5q2m5rGJ56eR5oqA5aSn5a2m56GV5aOr56CU56m255Sf5Z+55YW75pa55qGIZGQCBQ8PFgIfAGVkZAIJDw8WAh8AZWRkAg0PDxYCHwBlZGQCEw8PFgIfAAUGMDgxOVozZGQCFw8PFgIfAGVkZAIbDw8WAh8AZWRkAh0PDxYCHwBlZGQCHw8PFgIfAGVkZAIhDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnRmHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50ZmRkAiMPPCsACQEADxYEHwEWAB8CAgxkFhhmD2QWAgIBDw8WAh8ABRBB5YWs5YWx5a2m5L2N6K++ZGQCAQ9kFgICAQ8PFgIfAAUQQuS4k+S4muWtpuS9jeivvmRkAgIPZBYCAgEPDxYCHwAFEEPnoJTnqbbmlrnlkJHor75kZAIDD2QWAgIBDw8WAh8ABQpE57Sg6LSo6K++ZGQCBA9kFgICAQ8PFgIfAAUQReaKgOiDvemAieS/ruivvmRkAgUPZBYCAgEPDxYCHwAFEEbkuJPkuJrpgInkv67or75kZAIGD2QWAgIBDw8WAh8ABRBH5a2m56eR5Z+656GA6K++ZGQCBw9kFgICAQ8PFgIfAAUQSOWFrOWFsemAieS/ruivvmRkAggPZBYCAgEPDxYCHwAFEEnlrabnp5HpgJror4bor75kZAIJD2QWAgIBDw8WAh8ABQpU6KGl5L+u6K++ZGQCCg9kFgICAQ8PFgIfAAUNWeeglOeptueOr+iKgmRkAgsPZBYCAgEPDxYCHwAFDVrkuJPkuJrlrp7ot7VkZAIlDw8WAh8AZWRkAicPDxYCHwBlZGQCKQ8PFgIfAGVkZGT4yt1BZEkTb+Q0rrn1fnozFb9Cx1gV5tAvfHfIXTtf9A==" />
+
+
+<script src="/pyxx/ScriptResource.axd?d=lBdecDdVdO4WneeWkLLf20R4heQFw7lcrR4oRyKq7QHKDRfIRomewu_r5BVeCxNYSKWV47DIqdUnpaytM6QM2Ddxp-mvAf51Mb2whJn7YQ41&amp;t=16ab2387" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+// -->
+</script>
+
+        
+        
+    
+
+        
+        
+    <div class="printframe">
+        <h1><span id="_ctl0_MainWork_lblTitle">武汉科技大学硕士研究生培养方案</span></h1>
+        <h2>
+            (<span id="_ctl0_MainWork_xkml">学科门类：</span>
+            <span id="_ctl0_MainWork_lblml"></span>&nbsp;&nbsp;
+            <span id="_ctl0_MainWork_xkdm">一级学科代码：</span>
+            <span id="_ctl0_MainWork_lblyjxkdm"></span>&nbsp;
+            <span id="_ctl0_MainWork_lblxkmc">一级学科名称：</span>
+            <span id="_ctl0_MainWork_lblyjxkmc"></span>）<br />
+            <span id="_ctl0_MainWork_lblleft"></span>
+            <span id="_ctl0_MainWork_ejxkdm">(二级学科代码：</span>
+            <span id="_ctl0_MainWork_lblejxkdm">0819Z3</span>&nbsp;&nbsp;
+            <span id="_ctl0_MainWork_ejxkmc">二级学科名称：</span>
+            <span id="_ctl0_MainWork_lblejxkmc"></span>
+            <span id="_ctl0_MainWork_lblright">)</span>
+        </h2>
+        <h2>
+            一、培养目标</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblpymb"></span>
+        </p>
+        <h2>
+            二、学习年限</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblxxnx"></span>
+        </p>
+        <h2>
+            三、研究方向</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblyjfx"></span>
+        </p>
+        <h2>
+            四、课程设置与考试要求</h2>
+        
+            <table class="GridViewStyle" cellspacing="0" cellpadding="0" align="Center" rules="all" border="1" id="_ctl0_MainWork_dgData" style="width:100%;border-collapse:collapse;">
+	<tr class="GridViewHeaderStyle" nowrap="nowrap" align="center">
+		<td nowrap="nowrap" style="width:60px;">组别</td><td nowrap="nowrap">课程编号</td><td nowrap="nowrap">课程名称</td><td nowrap="nowrap">学时</td><td nowrap="nowrap">学分</td><td nowrap="nowrap">开课时间</td><td nowrap="nowrap">授课方式</td><td nowrap="nowrap">考试方式</td><td nowrap="nowrap">备注</td>
+	</tr>
+</table>
+            <table id="table4" width="660" align="center" border="0">
+                <tr>
+                    <td align="left" style="line-height:20px;">
+                        <font face="宋体">备注:</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="line-height:20px;">
+                        <font face="宋体">
+                            <table id="_ctl0_MainWork_dgkclx" cellspacing="2" border="0" style="width:100%;">
+	<tr>
+		<td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl0_lblkclx">A公共学位课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl1_lblkclx">B专业学位课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl2_lblkclx">C研究方向课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl3_lblkclx">D素质课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl4_lblkclx">E技能选修课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl5_lblkclx">F专业选修课</span>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl6_lblkclx">G学科基础课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl7_lblkclx">H公共选修课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl8_lblkclx">I学科通识课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl9_lblkclx">T补修课</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl10_lblkclx">Y研究环节</span>
+                                </td><td>
+                                    <span id="_ctl0_MainWork_dgkclx__ctl11_lblkclx">Z专业实践</span>
+                                </td>
+	</tr>
+</table></font>
+                    </td>
+                </tr>
+            </table>
+        <h2>
+            五、培养环节</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblpyhj"></span>
+        </p>
+        <h2>
+            六、培养方式</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblpyfs"></span>
+        </p>
+        <h2>
+            七、必读书目</h2>
+        <p>
+            <span id="_ctl0_MainWork_lblbdsm"></span>
+        </p>
+    </div>
+
+        
+        <div id="gotopbtn">
+            <a class="button arrowup" style="cursor: pointer; margin: 1px; font-weight: bolder;
+                font-family: 微软雅黑;">回到顶部</a></div>
+        <script type="text/javascript">
+            (function () {
+                var n = 200;
+                var obj = document.getElementById("gotopbtn");
+                if (!obj) { return false; }
+                var x = 0;
+                var fe = $("#gotopbtn");
+                var bw = document.body.offsetWidth;
+                window.onscroll = function () {
+                    x = (document.body.scrollTop || document.documentElement.scrollTop);
+                    if (x <= n) { fe.fadeOut().hide() } else { fe.fadeIn().show() };
+                };
+                obj.onclick = function () {
+                    window.scrollTo(0, 0); this.blur(); return false;
+                }
+//                getOs();
+//                window.onresize = function () { obj.style.top = (document.body.scrollTop || document.documentElement.scrollTop) + n + 'px' };
+            })();
+        </script>
+        </form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>
